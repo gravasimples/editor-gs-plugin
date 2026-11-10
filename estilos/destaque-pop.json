@@ -1,0 +1,45 @@
+{
+ "nome": "destaque-pop",
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 80,
+  "tamanho_16x9": 60,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "centro",
+  "palavras_por_linha_max": 3,
+  "maiusculas": true,
+  "animacao": "pop"
+ },
+ "montagem": {
+  "ritmo": "normal",
+  "corte_inteligente": true,
+  "silencio_min_s": 0.3,
+  "silencio_limiar_db": -35,
+  "margem_corte_s": 0.08,
+  "zoom_por_frase": false,
+  "clarao_transicao": false,
+  "tela_final_cta": false
+ },
+ "saida": {
+  "formatos": [
+   "9x16",
+   "16x9"
+  ],
+  "resolucao": "1080p",
+  "fps": 30,
+  "codec": "libx264",
+  "crf": 20,
+  "audio_kbps": 160
+ },
+ "descricao": "Legenda grande no centro, em maiúsculas, com pop na palavra falada. Mais energia que o padrão.",
+ "temas": [
+  "dica",
+  "energia",
+  "opiniao"
+ ],
+ "casa": true
+}

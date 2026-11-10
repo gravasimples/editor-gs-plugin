@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- legenda-cinetica: legenda que entra palavra por palavra nos tempos da transcrição (mesmo formato das palavras do Editor GS), Inter ExtraBold,
+    caixa marinho #000921 e palavra atual em laranja #F79615. Tempos relativos ao começo do overlay.
+    DADOS: {"palavras": [{"palavra": "Olha", "inicio": 0.0, "fim": 0.3}, ...], "max_palavras": 4, "posicao": "baixo" | "centro", "destaques": ["palavra"]}
+    Marcadores {{LARGURA}} {{ALTURA}} {{DURACAO}} {{FPS}} {{DADOS}} são preenchidos por editor_video/hyperframes.py.
+    Regra do HyperFrames: o render é por seek, então só opacity/x/y/scale/rotation nas tweens (nada de color, classe ou callback). -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width={{LARGURA}}, height={{ALTURA}}" />
+    <script src="gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Inter"; src: url("Inter-ExtraBold.ttf"); font-weight: 800; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: {{LARGURA}}px; height: {{ALTURA}}px; overflow: hidden; background: transparent; }
+      #root { position: relative; width: 100%; height: 100%; font-family: "Inter", sans-serif; }
+      #palco { position: absolute; left: 5%; right: 5%; top: 0; height: 100%; }
+      .linha { position: absolute; left: 0; right: 0; display: flex; flex-wrap: wrap; justify-content: center; gap: 0.18em 0.3em; width: fit-content; margin: 0 auto;
+               background: #000921; color: #FFFFFF; font-weight: 800; font-size: calc({{ALTURA}}px * 0.034); line-height: 1.15; padding: 0.4em 0.7em;
+               border-radius: 20px; text-transform: uppercase; opacity: 0; }
+      .linha.baixo { bottom: 18%; }
+      .linha.centro { top: 50%; transform: translateY(-50%); }
+      .p { position: relative; display: inline-block; opacity: 0; }
+      .p .l { position: absolute; left: 0; top: 0; color: #F79615; opacity: 0; }
+      .p.destaque .b { color: #F79615; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="legenda" data-start="0" data-duration="{{DURACAO}}" data-width="{{LARGURA}}" data-height="{{ALTURA}}" data-fps="{{FPS}}">
+      <div id="palco" class="clip" data-start="0" data-duration="{{DURACAO}}"></div>
+    </div>
+    <script>
+      const DADOS = {{DADOS}};
+      const DUR = {{DURACAO}};
+      const palco = document.getElementById("palco");
+      const posicao = DADOS.posicao === "centro" ? "centro" : "baixo";
+      const maxP = DADOS.max_palavras || 4;
+      const destaques = new Set((DADOS.destaques || []).map((d) => String(d).toLowerCase()));
+      const palavras = (DADOS.palavras || []).filter((p) => p && p.palavra && p.inicio < DUR);
+      // agrupa em linhas de até maxP palavras, quebrando em pausa > 0,6 s
+      const linhas = [];
+      let atual = [];
+      palavras.forEach((p) => {
+        if (atual.length && (atual.length >= maxP || p.inicio - atual[atual.length - 1].fim > 0.6)) { linhas.push(atual); atual = []; }
+        atual.push(p);
+      });
+      if (atual.length) linhas.push(atual);
+      const tl = gsap.timeline({ paused: true });
+      linhas.forEach((linha, i) => {
+        const el = document.createElement("div"); el.className = "linha " + posicao;
+        const itens = linha.map((p) => {
+          const s = document.createElement("span");
+          s.className = "p" + (destaques.has(p.palavra.toLowerCase().replace(/[.,!?]/g, "")) ? " destaque" : "");
+          const b = document.createElement("span"); b.className = "b"; b.textContent = p.palavra;
+          const l = document.createElement("span"); l.className = "l"; l.textContent = p.palavra;  // cópia laranja por cima: "palavra atual" só com opacity
+          s.appendChild(b); s.appendChild(l); el.appendChild(s);
+          return { s, l };
+        });
+        palco.appendChild(el);
+        const ini = linha[0].inicio;
+        const fim = Math.min(DUR, (linhas[i + 1] ? linhas[i + 1][0].inicio : linha[linha.length - 1].fim + 0.25));
+        tl.fromTo(el, { opacity: 0, y: 24, scale: 0.94 }, { opacity: 1, y: 0, scale: 1, duration: 0.18, ease: "power3.out" }, ini);
+        linha.forEach((p, j) => {
+          tl.fromTo(itens[j].s, { opacity: 0, scale: 0.6, y: 10 }, { opacity: 1, scale: 1, y: 0, duration: 0.16, ease: "back.out(2)" }, p.inicio);
+          tl.set(itens[j].l, { opacity: 1 }, p.inicio);
+          if (linha[j + 1]) tl.set(itens[j].l, { opacity: 0 }, linha[j + 1].inicio);
+        });
+        tl.to(el, { opacity: 0, duration: 0.12, ease: "power2.in" }, Math.max(ini + 0.2, fim - 0.12));
+      });
+      window.__timelines = window.__timelines || {};
+      window.__timelines["legenda"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

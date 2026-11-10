@@ -1,0 +1,29 @@
+{
+ "id": "cinetica-onda",
+ "nome": "Cinética em onda",
+ "descricao": "As palavras sobem conforme são faladas e, na palavra que importa, as letras fazem uma onda em laranja com um tremor curto (GSAP SplitText + CustomWiggle no Remotion). Sem arquivo ASS: a legenda nasce dentro do montar_remotion.",
+ "temas": [
+  "dica",
+  "lista",
+  "energia",
+  "gancho"
+ ],
+ "fora_da_marca": false,
+ "ordem": 16,
+ "motor": "remotion",
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 72,
+  "tamanho_16x9": 54,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "centro",
+  "palavras_por_linha_max": 3,
+  "maiusculas": true,
+  "animacao": "onda",
+  "tremor": true
+ }
+}

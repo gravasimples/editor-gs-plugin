@@ -1,0 +1,30 @@
+{
+ "id": "cinetica-maquina",
+ "nome": "Cinética máquina de escrever",
+ "descricao": "As letras vão sendo digitadas no ritmo da fala, com um cursor laranja piscando (GSAP no Remotion). Boa para história e bastidor. Sem arquivo ASS: a legenda nasce dentro do montar_remotion.",
+ "temas": [
+  "historia",
+  "bastidor",
+  "tutorial"
+ ],
+ "fora_da_marca": false,
+ "ordem": 15,
+ "motor": "remotion",
+ "legenda": {
+  "modo": "linha",
+  "fonte": "Inter",
+  "peso": "Bold",
+  "tamanho_9x16": 62,
+  "tamanho_16x9": 46,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 4,
+  "maiusculas": false,
+  "animacao": "maquina",
+  "tremor": false,
+  "caixa": true,
+  "cor_caixa": "#000921"
+ }
+}

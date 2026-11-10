@@ -1,0 +1,27 @@
+{
+ "id": "display-unbounded",
+ "nome": "Display Unbounded",
+ "descricao": "Unbounded em maiúsculas, a fonte de títulos do site, com salto na palavra falada. Visual de marca forte.",
+ "temas": [
+  "lista",
+  "anuncio",
+  "novidade"
+ ],
+ "fora_da_marca": false,
+ "ordem": 8,
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Unbounded GS",
+  "peso": "Regular",
+  "tamanho_9x16": 64,
+  "tamanho_16x9": 48,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "centro",
+  "palavras_por_linha_max": 3,
+  "maiusculas": true,
+  "animacao": "salto",
+  "contorno_px": 5
+ }
+}

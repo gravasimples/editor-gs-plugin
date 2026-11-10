@@ -1,0 +1,10 @@
+# Fluxo: apostila
+
+Apostila (A4) ou slides (16:9) em PDF: material de apoio de aula, live, mentoria ou lead magnet, diagramado no manual da marca pela ferramenta `gerar_apostila`. O Editor escreve o conteúdo; a ferramenta cuida da capa, sumário, caixas e rodapé.
+
+Passos para o Editor:
+1. Entender tema, público e uso (pedido, cartão do Notion, transcrição de uma aula anexada: se vier vídeo ou áudio, `transcrever` primeiro e usar a fala como base). Ler `marca/manual.md`, `marca/voz.md` e `referencias/_textos/INDICE.md` se existirem. Público iniciante que ensina online; benefício antes do termo técnico; passo a passo real do OBS; nada de preço, oferta, número de alunos ou promessa.
+2. Formato: `apostila` (A4, 4 a 12 seções, corrido) se não disser; `slides` quando for apoio de aula ou live (uma ideia por página, até 5 itens por página, texto grande).
+3. Escrever `saida/<slug>/_trabalho/conteudo.json`: `titulo` (com `destaque` de uma palavra), `subtitulo`, `autor` ("Grava Simples"), `data`, `cta` (uma linha, sem oferta) e `secoes`: cada uma com `titulo`, `destaque` opcional e `blocos` na ordem: parágrafo (texto solto), `{"subtitulo"}`, `{"lista": [...]}`, `{"passos": [...]}` (caminho de menu do OBS exato: Configurações → Vídeo), `{"dica"}`, `{"atencao"}`, `{"imagem": caminho, "legenda"}` (só prints reais anexados em `entrada/` ou de `materiais/`; nunca inventar print), `{"tabela": [[cabeçalho], [linha]...]}`.
+4. `gerar_apostila(conteudo_json, saida/<slug>/apostila.pdf, formato)`; logo só se existir `../estilos/logo.png`. Conferir `paginas` no JSON (apostila: 3 a 20 páginas; slides: capa + uma por seção, se vier mais é porque a seção não coube: encurte).
+5. Entrega: `apostila.pdf` (ou `slides.pdf`). Mensagem final: `## Resumo` (formato, páginas, seções, fontes usadas), `## Legenda do post` (texto curto para oferecer o material, com CTA de comentar ou seguir, sem oferta), `## Hashtags`, `## Pendências` (prints que faltam, termos `[CONFERIR]`) e `## Arquivos`. Não publicar.

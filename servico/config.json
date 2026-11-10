@@ -1,0 +1,105 @@
+{
+  "paperclip_url": "http://localhost:3100",
+  "company_id": "a1d06fc0-7516-4cfc-a603-20d7b995e661",
+  "agent_id": "5776d955-ae65-4a52-a5c3-3406066b434e",
+  "project_id": "c4ea4a0f-9214-475f-aede-676a254785cc",
+  "porta": 3200,
+  "ocultar_issues": [
+    "GRA-2"
+  ],
+  "agent_fable_id": "f0bd614b-5458-4959-b805-241cab511443",
+  "modelos": {
+    "padrao": {
+      "agente": "agent_fable_id",
+      "rotulo": "Fable 5.1 (esforço baixo)",
+      "modelo": "claude-fable-5-1",
+      "nota": "Decisão do Raphael em 10/11/2026: o padrão é o Fable 5.1 com --effort low (gasta pouco); 'fable' = o mesmo modelo em esforço alto; 'opus' = Opus 5.5."
+    },
+    "fable": {
+      "agente": "agent_fable_alto_id",
+      "rotulo": "Fable 5.1 (esforço alto)",
+      "modelo": "claude-fable-5-1"
+    },
+    "opus": {
+      "agente": "agent_id",
+      "rotulo": "Opus 5.5",
+      "modelo": "claude-opus-5-5"
+    },
+    "codex": {
+      "agente": "agent_codex_id",
+      "rotulo": "Codex (ChatGPT)",
+      "modelo": "gpt-5.3-codex"
+    },
+    "gemini": {
+      "agente": "agent_gemini_id",
+      "rotulo": "Gemini (Antigravity)",
+      "modelo": "gemini-3.8-flash-high"
+    }
+  },
+  "fluxo_modelo": {
+    "traduzir-legenda": [
+      "codex",
+      "gemini"
+    ],
+    "dublagem": [
+      "codex",
+      "gemini"
+    ],
+    "analise-resultados": [
+      "codex",
+      "gemini"
+    ],
+    "apostila": [
+      "codex",
+      "gemini"
+    ]
+  },
+  "reserva_automatica": true,
+  "reserva_max": 2,
+  "reserva_espera_s": 180,
+  "reserva_intervalo_s": 60,
+  "executor": {
+    "modo": "local",
+    "pasta": "workspace/executor",
+    "prefixo": "GRA",
+    "max_simultaneos": 1,
+    "tentativas": 2,
+    "timeout_s": 10800,
+    "intervalo_s": 2,
+    "agentes": [
+      {
+        "id": "5776d955-ae65-4a52-a5c3-3406066b434e",
+        "nome": "Editor GS",
+        "motor": "claude",
+        "modelo": "claude-opus-5-5"
+      },
+      {
+        "id": "f0bd614b-5458-4959-b805-241cab511443",
+        "nome": "Editor GS (Fable, esforço baixo)",
+        "motor": "claude",
+        "modelo": "claude-fable-5-1",
+        "effort": "low"
+      },
+      {
+        "id": "7c1e2a90-5f3b-4d6e-9a8c-0fab1e0a1701",
+        "nome": "Editor GS (Fable, esforço alto)",
+        "motor": "claude",
+        "modelo": "claude-fable-5-1",
+        "effort": "high"
+      },
+      {
+        "id": "ce4b851a-8b3e-47c2-9a1a-04e1fb9ee2f1",
+        "nome": "Editor GS (Codex)",
+        "motor": "codex",
+        "modelo": "",
+        "nota": "sem -m: conta ChatGPT só aceita o modelo padrão do Codex CLI (gpt-5.3-codex foi recusado em 10/11)"
+      }
+    ],
+    "agentes_sem_adaptador": {
+      "gemini": "4757558b-b892-4018-bdee-16a832b5342e"
+    },
+    "nota": "Gemini (Antigravity) saiu dos modelos em 10/11/2026: sem adaptador no executor local; as ferramentas Gemini do MCP (revisar_video, traduzir_srt) continuam. Codex voltou em 10/11 com o adaptador codex."
+  },
+  "agent_codex_id": "ce4b851a-8b3e-47c2-9a1a-04e1fb9ee2f1",
+  "agent_fable_alto_id": "7c1e2a90-5f3b-4d6e-9a8c-0fab1e0a1701"
+}

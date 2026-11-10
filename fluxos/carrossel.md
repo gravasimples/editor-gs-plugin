@@ -1,0 +1,14 @@
+# Fluxo: carrossel
+
+Carrossel ou post de imagem para o Instagram no manual da Grava Simples (1080×1350, uma ideia por slide, até seis linhas de apoio, um destaque laranja por título, CTA final em pílula, cantos 20 px).
+
+Passos para o Editor:
+1. Entender a ideia (pedido, cartão, referência ou transcrição). Escolher o modelo: `tipografico` (dor/crença, alterna marinho e papel), `historia` (bastidor com foto real do Thiago/setup, caixa marinho no terço inferior, sem cobrir o rosto) ou `tweet` (comparação, custo ou resultado comprovado; capa clara).
+2. Escrever `saida/<slug>/slides.json`: 5 a 8 slides, cada um `{"titulo", "destaque" (uma palavra), "apoio": [até 6 linhas curtas], "foto"?, "selo"?}`; o último `{"titulo", "cta": "Siga @thiago.obsstudio" ou "Salve para testar no OBS"}`. Voz do Thiago (frases curtas, benefício antes do termo técnico), sem preço, oferta, número de alunos, falsa escassez ou travessão. Caixa alta só em selo ou palavra de destaque.
+3. Fotos: só imagens reais da `entrada/` ou do Drive (`buscar_material(tema, tipos="imagem", fontes="drive")` → caminhos `materiais/...`: Thiago, setup, prints do OBS). Sem banco de imagem no carrossel (regra do manual). Se não houver foto, usar `tipografico`. Material em vídeo: `extrair_quadros(video, saida_dir, n)` tira quadros nítidos (prioriza rosto) para os slides; `editar_foto` ajusta brilho, contraste e enquadramento quando a foto precisar.
+3b. Antes de escrever, ler `referencias/_perfil-thiago/perfil.md` (se existir) para calibrar gancho, tamanho de texto e hashtags pelo que já rendeu; e, se o pedido vier de um cartão do Notion, seguir o roteiro do cartão (o pedido traz o texto).
+4. `gerar_carrossel(slides_json, saida_dir, modelo, foto_capa, logo)`; logo só se o arquivo oficial existir em `../estilos/logo.png` (não desenhar a marca). Conferir cada PNG: texto cabe, nada corta, rosto livre.
+5. Ajustes de foto quando pedir: `editar_foto` (formato, brilho, contraste, fundo desfocado, texto em caixa marinho, borda, cantos). Post único: `gerar_post_imagem`.
+5b. Se o pedido falar em animação ou Reels do carrossel: `animar_carrossel(saida_dir, saida/<slug>/carrossel.mp4, formato 4x5 ou 9x16)` depois de gerar os PNGs (zoom leve e fundido; o Instagram aceita slide em vídeo no carrossel e o 9:16 serve de Reels/Story).
+5c. Sempre gerar os editáveis para o Canva: `exportar_canva(slides_json, saida/<slug>/carrossel.pptx, modelo, foto_capa, logo)` e `exportar_canva(..., saida/<slug>/carrossel.pdf, formato="pdf")` (mesma composição, camadas reais; o PDF leva a fonte Inter embutida). Citar no `## Resumo` que o Raphael abre no Canva por Importar arquivo.
+6. Entregar em `saida/<slug>/`: os PNGs, `carrossel.pptx`, `carrossel.pdf` e `slides.json`. Na mensagem final: `## Resumo` (modelo, fotos usadas; manual v2 incorporado em 13/10/2026), `## Legenda do post`, `## Hashtags`, `## Título (YouTube)`, `## Gancho` e `## Pendências`. Sem `post.md` nem `relatorio.md`. Não publicar.
