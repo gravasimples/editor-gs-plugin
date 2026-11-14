@@ -1,0 +1,29 @@
+{
+ "id": "cinetica-tipografica",
+ "nome": "Cinética tipográfica",
+ "descricao": "Cada palavra entra na hora em que é falada, com um giro leve e escala (GSAP no Remotion). A palavra falada fica laranja. Sem arquivo ASS: a legenda nasce dentro do montar_remotion.",
+ "temas": [
+  "gancho",
+  "opiniao",
+  "energia",
+  "anuncio"
+ ],
+ "fora_da_marca": false,
+ "ordem": 14,
+ "motor": "remotion",
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 76,
+  "tamanho_16x9": 56,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 3,
+  "maiusculas": true,
+  "animacao": "tipografica",
+  "tremor": false
+ }
+}

@@ -1,0 +1,60 @@
+*.mov
+*.mp4
+.env
+.venv/
+__pycache__/
+app/dist/
+app/node_modules/
+docs/logs/
+servico/conversas.json
+testes/*.wav
+workspace/entrada/
+workspace/saida/
+workspace/referencias/
+.env.*
+!.env.exemplo
+.cookies/*
+!.cookies/.gitkeep
+workspace/materiais/
+servico/canva_token.json
+workspace/anotacoes/
+workspace/atalho.json
+workspace/relatorios/
+workspace/clipes/
+servico/pastas.json
+workspace/marca/
+servico/textos.json
+servico/youtube_token.json
+trilhas/*
+!trilhas/README.md
+workspace/banco/
+remotion/public/render/
+workspace/voz/
+servico/push_vapid.json
+servico/push_inscricoes.json
+servico/etiquetas.json
+servico/automacoes.json
+servico/marca_regras.json
+servico/automacao_rodadas.json
+
+# Biblioteca de estilos (03/11/2026): amostra com o rosto do Thiago e prévias geradas ficam fora do git (refazer: ver HANDOFF 03/11)
+estilos/previas/*.mp4
+estilos/previas/*.jpg
+workspace/estilos-previas/
+servico/pasta_vigiada_estado.json
+servico/automacoes_estado.json
+servico/campanhas.json
+workspace/repertorio/
+
+# 09/11: pacotes grandes reinstaláveis pelo package.json e mídia bruta de trabalho
+workspace/_trabalho/
+
+# 10/11: banco e logs do executor local (dados da instalação, não código)
+workspace/executor/
+
+# 10/11: node_modules do Remotion fora do git (tinha Chromium e cache acima de 100 MB; o instalador roda npm install + remotion browser ensure)
+remotion/node_modules/
+
+# 10/11: HyperFrames (teste integrado): pacotes locais e projetos temporários de render
+hyperframes/node_modules/
+hyperframes/_render/

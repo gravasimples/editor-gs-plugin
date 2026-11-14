@@ -1,0 +1,26 @@
+{
+ "id": "subir",
+ "nome": "Linha que sobe",
+ "descricao": "A frase sobe de leve ao entrar, com a palavra falada em laranja. Movimento suave, sem exagero.",
+ "temas": [
+  "tutorial",
+  "dica",
+  "bastidor"
+ ],
+ "fora_da_marca": false,
+ "ordem": 6,
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 68,
+  "tamanho_16x9": 50,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 4,
+  "maiusculas": false,
+  "animacao": "subir"
+ }
+}

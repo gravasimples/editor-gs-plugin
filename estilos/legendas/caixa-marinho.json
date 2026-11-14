@@ -1,0 +1,30 @@
+{
+ "id": "caixa-marinho",
+ "nome": "Caixa marinho",
+ "descricao": "Texto branco numa caixa marinho translúcida, entra suave. Bom para fala calma e entrevista.",
+ "temas": [
+  "depoimento",
+  "entrevista",
+  "opiniao",
+  "historia"
+ ],
+ "fora_da_marca": false,
+ "ordem": 4,
+ "legenda": {
+  "modo": "linha",
+  "fonte": "Inter",
+  "peso": "Bold",
+  "tamanho_9x16": 58,
+  "tamanho_16x9": 44,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 5,
+  "maiusculas": false,
+  "animacao": "aparecer",
+  "caixa": true,
+  "cor_caixa": "#000921",
+  "caixa_alpha": "30"
+ }
+}

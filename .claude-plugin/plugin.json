@@ -1,0 +1,9 @@
+{
+  "name": "editor-gs",
+  "version": "1.2.5",
+  "description": "Editor GS: o editor de vídeo da Grava Simples como app local (fila, conversas, entregas, estilos, métricas) movido pelo Claude Code da própria pessoa. Sem Paperclip, sem servidor nosso.",
+  "author": { "name": "Grava Simples", "email": "gravasimples@gmail.com" },
+  "homepage": "https://gravasimples.com.br",
+  "license": "Proprietary",
+  "keywords": ["video", "edicao", "reels", "youtube", "obs", "grava-simples", "editor"]
+}

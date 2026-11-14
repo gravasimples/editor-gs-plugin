@@ -1,0 +1,167 @@
+[
+ {
+  "id": "skills-pacote",
+  "data": "2026-11-13",
+  "area": "Banco de skills",
+  "titulo": "Instalar skill de repositório com várias skills",
+  "o_que_e": "O instalador recusava repositório com mais de uma skill (todas as aprovadas eram assim) e o download estourava caminho longo no Windows. Agora cada skill do repositório vira uma pasta do pacote; arquivo acima de 25 MB e skill com programa (.exe/.dll) ficam de fora com aviso. A análise das 8 aprovadas recomenda não instalar nenhuma (ver o item Análise das skills); o teste é instalar e desinstalar uma.",
+  "como_testar": [
+   "Abrir Banco de skills",
+   "Num item aprovado (ex.: shorts), clicar em ⬇ Instalar skill e ver a mensagem",
+   "Abrir a ficha (clicar no nome) e ver Instalada",
+   "Clicar em desinstalar para não deixar a skill carregada no agente"
+  ],
+  "onde": "/skills"
+ },
+ {
+  "id": "skills-analise",
+  "data": "2026-11-13",
+  "area": "Banco de skills",
+  "titulo": "Análise das 8 skills aprovadas",
+  "o_que_e": "Cada skill aprovada ganhou uma nota com o veredito (instalar, só reproduzir ou descartar) e o campo Como reproduzir preenchido. Resumo: nenhuma vale instalar no agente; shorts, 2BFT e ShortsFlow têm as melhores técnicas para levar ao motor.",
+  "como_testar": [
+   "Abrir Banco de skills",
+   "Clicar no nome de cada item aprovado e ler a nota de Claude (análise 13/11)",
+   "Dizer quais técnicas entram primeiro no motor (a sugestão está no chat)"
+  ],
+  "onde": "/skills"
+ },
+ {
+  "id": "laboratorio",
+  "data": "2026-11-13",
+  "area": "App",
+  "titulo": "Laboratório (esta página)",
+  "o_que_e": "Lista do que ficou pronto para você testar, com o passo a passo. Funcionou ou Deu problema fica gravado, e o problema vira anotação para a próxima rodada de construção.",
+  "como_testar": [
+   "Marcar um item como ✅ Funcionou",
+   "Marcar outro como ⚠ Deu problema, escrevendo o que aconteceu",
+   "Conferir que o número ao lado de Laboratório no menu diminuiu",
+   "Ver o problema em Ideias › Anotações do celular"
+  ],
+  "onde": "/laboratorio"
+ },
+ {
+  "id": "editor-manual-trechos",
+  "data": "2026-11-12",
+  "area": "Editor manual",
+  "titulo": "Aparar, mover e apagar trechos",
+  "o_que_e": "Faixa Trechos no editor à mão: aparar o começo e o fim de cada corte, mudar a ordem e apagar. Legenda, grafismos, efeitos sonoros e zoom acompanham. A prévia lê direto do bruto e o render recorta de novo.",
+  "como_testar": [
+   "Abrir uma entrega feita a partir de 12/11 e clicar em ✂ Editar à mão",
+   "Na faixa Trechos, aparar o fim de um corte",
+   "Arrastar um trecho para outra posição e apagar outro",
+   "Dar play: a legenda tem que acompanhar a fala",
+   "Renderizar e conferir o arquivo _editado_vN"
+  ],
+  "onde": "/biblioteca"
+ },
+ {
+  "id": "editor-manual-legenda",
+  "data": "2026-11-12",
+  "area": "Editor manual",
+  "titulo": "Trocar o estilo inteiro da legenda",
+  "o_que_e": "Seletor com os 16 estilos de legenda dentro do editor à mão; a troca vale para o vídeo todo e aparece na prévia.",
+  "como_testar": [
+   "No editor à mão, abrir a parte de legenda",
+   "Escolher outro estilo no seletor",
+   "Conferir na prévia",
+   "Renderizar e ver se saiu igual à prévia"
+  ],
+  "onde": "/biblioteca"
+ },
+ {
+  "id": "capcut-v3",
+  "data": "2026-11-12",
+  "area": "CapCut",
+  "titulo": "Mandar ao CapCut v3 (legenda editável no estilo da entrega)",
+  "o_que_e": "Legenda nativa do CapCut como padrão, com a fonte, o contorno, a sombra e a posição da entrega. Pílula, kicker e manchete viram texto do CapCut com animação; o resto dos grafismos vem num vídeo sem fundo. Barra de progresso em clipe próprio, base no bruto com a entrada e a saída de cada corte, voz no volume de −16 LUFS.",
+  "como_testar": [
+   "Numa entrega, clicar em Mandar ao CapCut",
+   "Abrir o CapCut e o rascunho Editor GS - …",
+   "Conferir: legenda editável e parecida com a entrega",
+   "Conferir: grafismos sem fundo preto, barra de progresso, zoom nos cortes",
+   "Comparar o volume da voz com a entrega"
+  ],
+  "onde": "/biblioteca"
+ },
+ {
+  "id": "capcut-destaque",
+  "data": "2026-11-12",
+  "area": "CapCut",
+  "titulo": "Legenda com palavra falada em laranja no CapCut",
+  "o_que_e": "Modo nativa_destaque: uma caixa de texto por palavra, a palavra falada em laranja. Mais pesado de editar, mais fiel ao estilo karaokê.",
+  "como_testar": [
+   "No editor à mão, Mandar ao CapCut e escolher a legenda com destaque",
+   "Abrir no CapCut e dar play",
+   "Dizer se prefere este modo ou a legenda por frase"
+  ],
+  "onde": "/biblioteca"
+ },
+ {
+  "id": "demos-skills",
+  "data": "2026-11-12",
+  "area": "Repertório",
+  "titulo": "Demos de skills",
+  "o_que_e": "Três edições por skill instalada com os mesmos brutos (Reels, ADS e aula), para comparar lado a lado o que cada skill entrega.",
+  "como_testar": [
+   "Abrir Demos de skills",
+   "Assistir as três edições de cada skill",
+   "Dizer qual skill vale levar para o motor"
+  ],
+  "onde": "/demos"
+ },
+ {
+  "id": "inicio-novo",
+  "data": "2026-11-12",
+  "area": "App",
+  "titulo": "Início com a caixa do pedido no topo",
+  "o_que_e": "Caixa do pedido em cima, tipos de pedido como atalhos, fluxo, estilo, pasta e modelo em ⚙ mais opções. Pastas de teste escondidas (aparecem com mostrar testes).",
+  "como_testar": [
+   "Abrir Novo pedido",
+   "Usar um atalho de tipo e mandar um pedido",
+   "Abrir ⚙ mais opções e conferir que nada sumiu"
+  ],
+  "onde": "/"
+ },
+ {
+  "id": "skills-quarentena-dissecar",
+  "data": "2026-11-13",
+  "area": "Banco de skills",
+  "titulo": "Skills em quarentena, raio-x e Dissecar",
+  "o_que_e": "Skills instaladas não entram mais no agente: ficam em quarentena e ganham raio-x automático (custo, telemetria, licença, peso). Dissecar separa cada skill em peças (regras, ativos, código, descartar) e você marca o que o Editor aproveita; o aproveitado vai para a Fila de absorção. As 7 instaladas já vieram dissecadas.",
+  "como_testar": [
+   "Abrir Banco de skills e descer até Skills instaladas: conferir 0 ativas no agente",
+   "Abrir um item instalado (ex.: Shorts) e clicar em 🧩 Peças",
+   "Marcar ✓ aproveitar numa peça e ver ela na Fila de absorção",
+   "Numa peça de regra, clicar em 🎓 ensinar ao Editor",
+   "Clicar em liberar MB numa skill pesada (AskEditor ou video-use)"
+  ],
+  "onde": "/skills"
+ },
+ {
+  "id": "edicao-com-motivo",
+  "data": "2026-11-13",
+  "area": "Edição",
+  "titulo": "Cortes que não comem sílaba e efeito só com motivo",
+  "o_que_e": "O agente agora lê a fala inteira e decide a história antes de cortar, confere cada emenda (conferir_emendas) antes de renderizar, não apaga mais \"e\", \"então\" e \"aí\" que ligam ideias, deixa mais folga no fim das palavras e só põe transição forte em troca de assunto e gráfico quando a frase tem motivo (no máximo 1 a cada 4 s). O estilo padrao sai limpo de verdade (sem zoom, clarão e tela final), e o Revisor passou a procurar fala desconexa, take repetido e efeito sem motivo.",
+  "como_testar": [
+   "Mandar um Reels bruto com refações e o estilo padrao: conferir que sai sem zoom, clarão e tela final",
+   "Mandar o mesmo com estilo profissional: conferir que as transições fortes caem nas trocas de assunto",
+   "Ler o Resumo: Na tela deve dizer o motivo de cada efeito",
+   "Procurar sílaba comida no fim das frases e frase que começa e não termina"
+  ],
+  "onde": "/"
+ },
+ {
+  "id": "atualizacao-automatica",
+  "data": "2026-11-13",
+  "area": "App",
+  "titulo": "Editor se atualiza sozinho",
+  "o_que_e": "Na instalação pelo plugin (Thiago e testers), o app confere o GitHub a cada 30 minutos e, quando há versão nova e nenhum pedido rodando, atualiza e reinicia sozinho. A página Operação mostra a versão, a última olhada e o botão Procurar atualização.",
+  "como_testar": [
+   "Abrir Operação e ver o cartão Versão do Editor",
+   "No PC do Thiago, depois de publicada uma versão nova, esperar até 30 min ou clicar em Procurar atualização"
+  ],
+  "onde": "/operacao"
+ }
+]

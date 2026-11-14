@@ -1,0 +1,49 @@
+{
+ "nome": "opiniao",
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 80,
+  "tamanho_16x9": 58,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "centro",
+  "palavras_por_linha_max": 3,
+  "maiusculas": true,
+  "animacao": "pop"
+ },
+ "montagem": {
+  "ritmo": "normal",
+  "corte_inteligente": true,
+  "silencio_min_s": 0.3,
+  "silencio_limiar_db": -35,
+  "margem_corte_s": 0.08,
+  "zoom_por_frase": true,
+  "clarao_transicao": true,
+  "tela_final_cta": true,
+  "terco_inferior": false,
+  "vinheta": true,
+  "slides_fundo": "marinho",
+  "jcut_s": 0.0,
+  "nivel": 2
+ },
+ "saida": {
+  "formatos": [
+   "9x16",
+   "16x9"
+  ],
+  "resolucao": "1080p",
+  "fps": 30,
+  "codec": "libx264",
+  "crf": 20,
+  "audio_kbps": 160
+ },
+ "descricao": "Tema opinião/quebra de crença: legenda grande no centro com pop, zoom por frase, clarão nos cortes, vinheta de abertura, slides marinho.",
+ "temas": [
+  "opiniao",
+  "energia"
+ ],
+ "casa": true
+}

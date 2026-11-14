@@ -1,0 +1,1 @@
+LD_LIBRARY_PATH=/home/rapha/.venvs/editor-gs/lib/python3.14/site-packages/nvidia/cublas/lib:/home/rapha/.venvs/editor-gs/lib/python3.14/site-packages/nvidia/cudnn/lib

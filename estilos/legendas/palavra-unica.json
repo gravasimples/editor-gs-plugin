@@ -1,0 +1,27 @@
+{
+ "id": "palavra-unica",
+ "nome": "Uma palavra por vez",
+ "descricao": "Uma palavra gigante de cada vez, entrando com zoom. Ritmo alto para gancho e anúncio.",
+ "temas": [
+  "gancho",
+  "anuncio",
+  "energia"
+ ],
+ "fora_da_marca": false,
+ "ordem": 3,
+ "legenda": {
+  "modo": "linha",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 112,
+  "tamanho_16x9": 84,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "centro",
+  "palavras_por_linha_max": 1,
+  "maiusculas": true,
+  "animacao": "zoom",
+  "contorno_px": 7
+ }
+}

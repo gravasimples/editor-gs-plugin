@@ -1,0 +1,25 @@
+{
+ "id": "alta-tutorial",
+ "nome": "No alto (tela livre)",
+ "descricao": "Legenda no alto do quadro para não cobrir a tela do OBS embaixo.",
+ "temas": [
+  "tutorial",
+  "tela"
+ ],
+ "fora_da_marca": false,
+ "ordem": 10,
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "Bold",
+  "tamanho_9x16": 58,
+  "tamanho_16x9": 44,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "alta",
+  "palavras_por_linha_max": 4,
+  "maiusculas": false,
+  "animacao": "aparecer"
+ }
+}

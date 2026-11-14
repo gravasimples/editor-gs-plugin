@@ -1,0 +1,27 @@
+{
+ "id": "karaoke-pop",
+ "nome": "Karaokê com pop",
+ "descricao": "A palavra falada acende em laranja e dá um pulinho. Grande, no centro, em maiúsculas. O padrão do nível profissional.",
+ "temas": [
+  "tutorial",
+  "dica",
+  "lista",
+  "opiniao"
+ ],
+ "fora_da_marca": false,
+ "ordem": 1,
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 78,
+  "tamanho_16x9": 58,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "centro",
+  "palavras_por_linha_max": 3,
+  "maiusculas": true,
+  "animacao": "pop"
+ }
+}

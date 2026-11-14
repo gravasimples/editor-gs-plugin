@@ -1,0 +1,204 @@
+{
+ "novos": {
+  "material_animations": [
+   {
+    "id": "906B797C-4934-4a6c-A997-F7443410E1E9",
+    "type": "sticker_animation",
+    "animations": [],
+    "multi_language_current": "none"
+   },
+   {
+    "id": "5B495DCE-7601-40d7-91D9-2F07A22C1CBE",
+    "type": "sticker_animation",
+    "animations": [],
+    "multi_language_current": "none"
+   }
+  ]
+ },
+ "alterados": {
+  "chromas": {
+   "D480706E-2CF9-438b-8D16-DC2D81643F81": {
+    "path": {
+     "antes": "C:\\Users\\rapha\\AppData\\Local\\CapCut\\Apps\\9.7.1.4203\\Resources\\Chroma2",
+     "depois": "C:/Users/rapha/AppData/Local/CapCut/Apps/9.7.1.4203/Resources/Chroma2"
+    }
+   }
+  },
+  "effects": {
+   "DE85C25E-5872-41b3-8643-852DF0C56E6D": {
+    "path": {
+     "antes": "C:/Users/rapha/AppData/Local/CapCut/Apps/9.7.1.4203/Resources/MixMode/d9c1d4ca7ab91df4f48d12b339f2da88",
+     "depois": "C:\\Users\\rapha\\AppData\\Local\\CapCut\\Apps\\9.7.1.4203\\Resources\\MixMode\\d9c1d4ca7ab91df4f48d12b339f2da88"
+    }
+   }
+  },
+  "sound_channel_mappings": {
+   "2076993E-B6C2-41fb-AC56-3470925339EC": {
+    "type": {
+     "antes": "",
+     "depois": "none"
+    }
+   }
+  },
+  "texts": {
+   "FC5890DF-E57B-4b27-A432-DF317C046CC2": {
+    "content": {
+     "antes": "{\"text\":\"TESTE\",\"styles\":[{\"fill\":{\"content\":{\"render_type\":\"solid\",\"solid\":{\"color\":[1,1,1]}}},\"font\":{\"path\":\"C:/Users/rapha/AppData/Local/CapCut/Apps/9.7.1.4203/Resources/Font/SystemFont/en.ttf\",\"id\":\"\"},\"size\":15,\"range\":[0,5]}]}",
+     "depois": "{\"text\":\"TESTE\",\"styles\":[{\"fill\":{\"content\":{\"render_type\":\"solid\",\"solid\":{\"color\":[0.9686274528503418,0.588235318660736,0.0823529437184334]}}},\"font\":{\"path\":\"C:/Users/rapha/AppData/Local/CapCut/Apps/9.7.1.4203/Resources/Font/SystemFont/en.ttf\",\"id\":\"\"},\"size\":15,\"useLetterColor\":true,\"range\":[0,5]}]}"
+    },
+    "text_color": {
+     "antes": "#FFFFFF",
+     "depois": "#f79615"
+    },
+    "use_effect_default_color": {
+     "antes": true,
+     "depois": false
+    }
+   }
+  },
+  "transitions": {
+   "0EB97809-4ECE-434F-B8B8-14FCD73A4FD2": {
+    "name": {
+     "antes": "Infinito 2",
+     "depois": "Deslizar"
+    },
+    "effect_id": {
+     "antes": "7037372139221029377",
+     "depois": "6757982416649851399"
+    },
+    "resource_id": {
+     "antes": "7037372139221029377",
+     "depois": "6757982416649851399"
+    },
+    "third_resource_id": {
+     "antes": "7037372139221029377",
+     "depois": "6757982416649851399"
+    },
+    "path": {
+     "antes": "C:/Users/rapha/AppData/Local/CapCut/User Data/Cache/effect/7037372139221029377/b87498756c478952cf7c804234f97bbb",
+     "depois": "C:/Users/rapha/AppData/Local/CapCut/User Data/Cache/effect/6757982416649851399/b99916e2936aeb2e56892ca617888694"
+    },
+    "category_id": {
+     "antes": "100000",
+     "depois": "123456"
+    },
+    "category_name": {
+     "antes": "",
+     "depois": "Transições"
+    },
+    "request_id": {
+     "antes": "",
+     "depois": "20261113043746000000000000404B841"
+    }
+   }
+  },
+  "videos": {
+   "DB78D161-38D5-47BD-A834-CD474B3E4589": {
+    "video_mask_stroke": {
+     "antes": {
+      "resource_id": "",
+      "path": "",
+      "type": "",
+      "color": "",
+      "size": 0.0,
+      "alpha": 0.0,
+      "distance": 0.0,
+      "texture": 0.0,
+      "horizontal_shift": 0.0,
+      "vertical_shift": 0.0
+     },
+     "depois": {
+      "resource_id": "",
+      "path": "C:/Users/rapha/AppData/Local/CapCut/Apps/9.7.1.4203/Resources/Chroma2",
+      "type": "",
+      "color": "",
+      "size": 0.0,
+      "alpha": 0.0,
+      "distance": 0.0,
+      "texture": 0.0,
+      "horizontal_shift": 0.0,
+      "vertical_shift": 0.0
+     }
+    },
+    "video_mask_shadow": {
+     "antes": {
+      "resource_id": "",
+      "path": "",
+      "color": "",
+      "alpha": 0.0,
+      "blur": 0.0,
+      "distance": 0.0,
+      "angle": 0.0
+     },
+     "depois": {
+      "resource_id": "",
+      "path": "C:/Users/rapha/AppData/Local/CapCut/Apps/9.7.1.4203/Resources/Chroma2",
+      "color": "",
+      "alpha": 0.0,
+      "blur": 0.0,
+      "distance": 0.0,
+      "angle": 0.0
+     }
+    }
+   }
+  }
+ },
+ "segmentos": {
+  "FDC04C88-7BAD-464F-9821-C363F9440C52": {
+   "extra_material_refs": {
+    "antes": [
+     "9808C11A-0B77-42D5-8487-84D22165A6EF",
+     "F25C20FC-3438-447A-89E3-6AC1FD6FC3DC",
+     "0EB97809-4ECE-434F-B8B8-14FCD73A4FD2",
+     "6400815B-51B0-43E7-AB83-EA2E71586F88",
+     "D1E30EC8-AC9B-4E2E-87C2-45D71C4A64F2",
+     "7387F394-2912-4B01-93CB-AE5282ACD62C",
+     "D71A4C86-AC8D-45E9-BE29-EB03DD0DEF73"
+    ],
+    "depois": [
+     "9808C11A-0B77-42D5-8487-84D22165A6EF",
+     "F25C20FC-3438-447A-89E3-6AC1FD6FC3DC",
+     "0EB97809-4ECE-434F-B8B8-14FCD73A4FD2",
+     "6400815B-51B0-43E7-AB83-EA2E71586F88",
+     "906B797C-4934-4a6c-A997-F7443410E1E9",
+     "D1E30EC8-AC9B-4E2E-87C2-45D71C4A64F2",
+     "7387F394-2912-4B01-93CB-AE5282ACD62C",
+     "D71A4C86-AC8D-45E9-BE29-EB03DD0DEF73"
+    ]
+   }
+  },
+  "6E328D77-0A73-4490-AAFF-F31B3F7254C9": {
+   "extra_material_refs": {
+    "antes": [
+     "44B25B65-EB85-4AA9-BE60-0FAB347065EE",
+     "70F8EBF1-F23F-4F67-BC9F-F5BDE8B323C7",
+     "88B1F7EF-DB92-43AD-BA6B-543B84E34F75",
+     "964D73A4-E61B-4332-97AE-D441D11E42A3",
+     "ABDD92D5-5DBD-41E4-8E7C-FBEBFD6A7888",
+     "BCC287C9-39DF-4462-84F3-8D4B5233CFDE"
+    ],
+    "depois": [
+     "44B25B65-EB85-4AA9-BE60-0FAB347065EE",
+     "70F8EBF1-F23F-4F67-BC9F-F5BDE8B323C7",
+     "88B1F7EF-DB92-43AD-BA6B-543B84E34F75",
+     "5B495DCE-7601-40d7-91D9-2F07A22C1CBE",
+     "964D73A4-E61B-4332-97AE-D441D11E42A3",
+     "ABDD92D5-5DBD-41E4-8E7C-FBEBFD6A7888",
+     "BCC287C9-39DF-4462-84F3-8D4B5233CFDE"
+    ]
+   }
+  },
+  "4A021CE6-AEE1-4fa0-A503-FB91E3B91BDD": {
+   "target_timerange": {
+    "antes": {
+     "start": 2000000,
+     "duration": 3000000
+    },
+    "depois": {
+     "start": 2500000,
+     "duration": 3000000
+    }
+   }
+  }
+ }
+}
