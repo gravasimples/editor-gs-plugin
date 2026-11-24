@@ -1,0 +1,396 @@
+{
+ "atualizado": "2026-11-16",
+ "videos": 23,
+ "efeitos": 195,
+ "temos": [
+  {
+   "recurso": "manchete",
+   "descricao": "título grande 1–2 linhas com palavra em destaque/caixa",
+   "videos": 14,
+   "usos": 28,
+   "igual": 3,
+   "parcial": 17
+  },
+  {
+   "recurso": "logos",
+   "descricao": "logo real de app/marca",
+   "videos": 9,
+   "usos": 22,
+   "igual": 7,
+   "parcial": 10
+  },
+  {
+   "recurso": "pilula",
+   "descricao": "termo numa pílula",
+   "videos": 5,
+   "usos": 27,
+   "igual": 6,
+   "parcial": 7
+  },
+  {
+   "recurso": "legenda_cinetica",
+   "descricao": "legenda palavra por palavra com cor na palavra atual, pop, tremor, máquina de escrever, onda",
+   "videos": 11,
+   "usos": 111,
+   "igual": 6,
+   "parcial": 5
+  },
+  {
+   "recurso": "numero",
+   "descricao": "número grande",
+   "videos": 8,
+   "usos": 25,
+   "igual": 5,
+   "parcial": 4
+  },
+  {
+   "recurso": "cartoes",
+   "descricao": "comparação em dois cartões",
+   "videos": 5,
+   "usos": 5,
+   "igual": 2,
+   "parcial": 3
+  },
+  {
+   "recurso": "kicker",
+   "descricao": "rótulo pequeno com ponto laranja",
+   "videos": 4,
+   "usos": 8,
+   "igual": 1,
+   "parcial": 3
+  },
+  {
+   "recurso": "pip",
+   "descricao": "vídeo em janela sobre outro",
+   "videos": 3,
+   "usos": 3,
+   "igual": 0,
+   "parcial": 3
+  },
+  {
+   "recurso": "trilha_ducking",
+   "descricao": "trilha que abaixa na fala",
+   "videos": 11,
+   "usos": 11,
+   "igual": 10,
+   "parcial": 1
+  },
+  {
+   "recurso": "pop",
+   "descricao": "pop/ding em texto",
+   "videos": 10,
+   "usos": 79,
+   "igual": 9,
+   "parcial": 1
+  },
+  {
+   "recurso": "cta",
+   "descricao": "chamada final (seguir/comentar)",
+   "videos": 9,
+   "usos": 9,
+   "igual": 8,
+   "parcial": 1
+  },
+  {
+   "recurso": "dividido",
+   "descricao": "tela dividida",
+   "videos": 5,
+   "usos": 5,
+   "igual": 4,
+   "parcial": 1
+  },
+  {
+   "recurso": "checklist",
+   "descricao": "lista com marcações entrando",
+   "videos": 3,
+   "usos": 8,
+   "igual": 3,
+   "parcial": 1
+  },
+  {
+   "recurso": "broll_janela",
+   "descricao": "b-roll em janela enquanto fala",
+   "videos": 1,
+   "usos": 1,
+   "igual": 0,
+   "parcial": 1
+  },
+  {
+   "recurso": "painel",
+   "descricao": "fala com painel de grafismo ao lado",
+   "videos": 1,
+   "usos": 1,
+   "igual": 0,
+   "parcial": 1
+  },
+  {
+   "recurso": "broll_cheio",
+   "descricao": "b-roll em tela cheia",
+   "videos": 10,
+   "usos": 46,
+   "igual": 16,
+   "parcial": 0
+  },
+  {
+   "recurso": "whoosh",
+   "descricao": "whoosh/swipe no movimento",
+   "videos": 9,
+   "usos": 82,
+   "igual": 9,
+   "parcial": 0
+  },
+  {
+   "recurso": "punch",
+   "descricao": "zoom de impacto rápido no corte (Camera.tsx)",
+   "videos": 7,
+   "usos": 81,
+   "igual": 7,
+   "parcial": 0
+  },
+  {
+   "recurso": "zoom_alternado",
+   "descricao": "enquadramento alterna 1,00/1,08 a cada corte",
+   "videos": 4,
+   "usos": 42,
+   "igual": 4,
+   "parcial": 0
+  },
+  {
+   "recurso": "fluxo",
+   "descricao": "ícones ligados por setas",
+   "videos": 3,
+   "usos": 3,
+   "igual": 3,
+   "parcial": 0
+  },
+  {
+   "recurso": "zoom_blur",
+   "descricao": "zoom com desfoque na transição",
+   "videos": 2,
+   "usos": 2,
+   "igual": 2,
+   "parcial": 0
+  },
+  {
+   "recurso": "clique",
+   "descricao": "clique",
+   "videos": 1,
+   "usos": 5,
+   "igual": 1,
+   "parcial": 0
+  },
+  {
+   "recurso": "zoom_tela",
+   "descricao": "câmera virtual segue a área ativa da tela",
+   "videos": 1,
+   "usos": 3,
+   "igual": 1,
+   "parcial": 0
+  },
+  {
+   "recurso": "ondas",
+   "descricao": "ondas sonoras animadas",
+   "videos": 1,
+   "usos": 3,
+   "igual": 1,
+   "parcial": 0
+  },
+  {
+   "recurso": "karaoke",
+   "descricao": "palavra atual pintada",
+   "videos": 1,
+   "usos": 1,
+   "igual": 1,
+   "parcial": 0
+  },
+  {
+   "recurso": "capitulos",
+   "descricao": "capítulos numerados",
+   "videos": 1,
+   "usos": 1,
+   "igual": 1,
+   "parcial": 0
+  },
+  {
+   "recurso": "antes_depois",
+   "descricao": "antes e depois lado a lado",
+   "videos": 1,
+   "usos": 1,
+   "igual": 1,
+   "parcial": 0
+  },
+  {
+   "recurso": "riscado",
+   "descricao": "palavra riscada e trocada",
+   "videos": 1,
+   "usos": 1,
+   "igual": 1,
+   "parcial": 0
+  },
+  {
+   "recurso": "deslize",
+   "descricao": "plano entra deslizando",
+   "videos": 1,
+   "usos": 1,
+   "igual": 1,
+   "parcial": 0
+  },
+  {
+   "recurso": "flash",
+   "descricao": "flash branco no corte",
+   "videos": 1,
+   "usos": 1,
+   "igual": 1,
+   "parcial": 0
+  }
+ ],
+ "lacunas": [
+  {
+   "familia": "camera",
+   "efeito": "movimento orgânico de câmera na mão",
+   "videos": 2,
+   "impacto": 2,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "transicao",
+   "efeito": "Jump Cut Dinâmico de Ação",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "transicao",
+   "efeito": "Jump cut de eliminação de respiro",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "som",
+   "efeito": "Áudio diegético da tela/monitor",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "media"
+  },
+  {
+   "familia": "grafismo",
+   "efeito": "pasta 3d com logo obs",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "media"
+  },
+  {
+   "familia": "grafismo",
+   "efeito": "card narrativo estetoscópio",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "media"
+  },
+  {
+   "familia": "grafismo",
+   "efeito": "mockup de slide com webcam e eletrocardiograma",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "dificil"
+  },
+  {
+   "familia": "som",
+   "efeito": "flatline de eletrocardiograma",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "grafismo",
+   "efeito": "grid de formatos com ícones em grade",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "media"
+  },
+  {
+   "familia": "som",
+   "efeito": "Efeito de áudio rádio/abafado",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "recorte",
+   "efeito": "Fundo virtual com recorte bugado",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "media"
+  },
+  {
+   "familia": "cor",
+   "efeito": "Filtro preto e branco + Vignette de citação",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "grafismo",
+   "efeito": "recortes flutuantes de equipamentos",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "media"
+  },
+  {
+   "familia": "ritmo",
+   "efeito": "Timelapse de montagem e entardecer",
+   "videos": 1,
+   "impacto": 3,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "transicao",
+   "efeito": "Corte seco entre ângulos do setup",
+   "videos": 1,
+   "impacto": 2,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "transicao",
+   "efeito": "corte seco alternando enquadramentos",
+   "videos": 1,
+   "impacto": 2,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "som",
+   "efeito": "Foley diegético de manuseio de microfone",
+   "videos": 1,
+   "impacto": 2,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "cor",
+   "efeito": "Desfoque e pixelização de imagem ruim",
+   "videos": 1,
+   "impacto": 2,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "transicao",
+   "efeito": "Corte seco para tela do laptop",
+   "videos": 1,
+   "impacto": 2,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "camera",
+   "efeito": "POV tour na mão (Handheld)",
+   "videos": 1,
+   "impacto": 2,
+   "dificuldade": "facil"
+  },
+  {
+   "familia": "grafismo",
+   "efeito": "Emoji Caixa de Encomenda 3D",
+   "videos": 1,
+   "impacto": 1,
+   "dificuldade": "facil"
+  }
+ ]
+}

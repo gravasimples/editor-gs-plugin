@@ -1,0 +1,60 @@
+{
+ "id": "dica-rapida-30s",
+ "ordem": 3,
+ "nome": "Dica rápida de 30 s",
+ "energia": "bem_dinamico",
+ "base_estilo": "profissional",
+ "legenda": "cinetica-onda",
+ "resumo": "Uma dica só, em até 30 s: gancho em 2 s, prova na tela, fim seco com convite para salvar.",
+ "formatos": [
+  "fala",
+  "fala_tela"
+ ],
+ "temas": [
+  "dica",
+  "gancho",
+  "energia"
+ ],
+ "grafismos": {
+  "tipos": [
+   "pilula",
+   "numero",
+   "manchete"
+  ],
+  "a_cada_s": 5,
+  "visual": [
+   "neon"
+  ]
+ },
+ "transicoes": {
+  "seco": 0.5,
+  "punch": 0.4,
+  "flash": 0.1
+ },
+ "alvos": {
+  "duracao_s": 30,
+  "pausa_max_s": 0.25
+ },
+ "estrutura": [
+  "0–2 s: a dica como promessa, legenda grande",
+  "2–20 s: a demonstração, sem enrolar",
+  "20–30 s: resultado e convite para salvar"
+ ],
+ "regras": [
+  "Corte toda pausa acima de 0,25 s sem comer fim de palavra",
+  "Número dito vira número na tela",
+  "Punch só na palavra de ênfase"
+ ],
+ "evitar": [
+  "introdução de quem eu sou",
+  "mais de uma dica",
+  "tela final longa"
+ ],
+ "prompt": "Dica rápida de até 30 s: abra com a dica como promessa em 2 s, mostre funcionando e feche convidando a salvar. Pausas curtas, legenda cinética em onda, número dito vira número em neon na tela e punch só na palavra de ênfase.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

@@ -1,0 +1,29 @@
+{
+ "id": "minuscula-discreta",
+ "nome": "Minúscula discreta",
+ "descricao": "Pequena, branca, minúscula, sem destaque e com contorno fino. Para vídeos estéticos em que a imagem manda.",
+ "temas": [
+  "bastidor",
+  "entrevista",
+  "cliente"
+ ],
+ "fora_da_marca": false,
+ "ordem": 9,
+ "legenda": {
+  "modo": "linha",
+  "fonte": "Inter",
+  "peso": "Regular",
+  "tamanho_9x16": 46,
+  "tamanho_16x9": 36,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 6,
+  "maiusculas": false,
+  "animacao": "aparecer",
+  "contorno_px": 2,
+  "sombra_px": 2,
+  "altura_pct": 18
+ }
+}

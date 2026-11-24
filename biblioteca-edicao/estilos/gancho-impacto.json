@@ -1,0 +1,56 @@
+{
+ "id": "gancho-impacto",
+ "ordem": 17,
+ "nome": "Abertura de impacto",
+ "energia": "bem_dinamico",
+ "base_estilo": "profissional",
+ "legenda": "palavra-unica",
+ "resumo": "Só os primeiros 3 s de qualquer peça: uma palavra por vez, plano fechado e punch na promessa.",
+ "formatos": [
+  "fala",
+  "fala_tela",
+  "anuncio"
+ ],
+ "temas": [
+  "gancho",
+  "energia"
+ ],
+ "grafismos": {
+  "tipos": [
+   "manchete"
+  ],
+  "a_cada_s": 30,
+  "visual": [
+   "3d"
+  ]
+ },
+ "transicoes": {
+  "punch": 0.6,
+  "seco": 0.4
+ },
+ "montagem": {
+  "gancho_animacao": "palavra"
+ },
+ "estrutura": [
+  "0 s: a fala começa no primeiro quadro",
+  "uma palavra por vez na legenda",
+  "punch na palavra da promessa",
+  "em 3 s já está no assunto"
+ ],
+ "regras": [
+  "Use junto com a receita do resto do vídeo",
+  "A fala começa no quadro zero",
+  "Manchete 3D só se a frase for curta"
+ ],
+ "evitar": [
+  "logo ou vinheta antes da fala",
+  "pergunta genérica de abertura"
+ ],
+ "prompt": "Abertura de impacto nos 3 primeiros segundos: a fala começa no quadro zero, legenda uma palavra por vez, punch na palavra da promessa e, se a frase for curta, manchete em 3D. Depois segue a receita do resto do vídeo.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

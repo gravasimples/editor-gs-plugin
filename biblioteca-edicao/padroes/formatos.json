@@ -1,0 +1,266 @@
+{
+ "atualizado": "2026-11-16",
+ "fala_tela": {
+  "descricao": "fala para a câmera com trechos de tela do OBS (ex.: série O óbvio precisa ser dito)",
+  "referencias": 4,
+  "decupadas": 4,
+  "alvos": {
+   "duracao_s": 38.65,
+   "palavras_por_s": 3.85,
+   "pausa_max_s": 0.31,
+   "plano_medio_s": 10.97,
+   "cortes_por_min": 4.1,
+   "lufs": -16.65,
+   "fala_comeca_s": 0.0
+  },
+  "padroes": {
+   "grafismo_a_cada_s": 4.08,
+   "trecho_medio_s": 3.94,
+   "tipos_grafismo": {
+    "pilula": 9,
+    "cartoes": 7,
+    "cta": 6,
+    "kicker": 4,
+    "manchete": 4,
+    "pilulas": 1,
+    "fluxo": 1,
+    "checklist": 1,
+    "logos": 1
+   },
+   "transicoes": {
+    "seco": 16,
+    "punch": 9,
+    "deslize": 8,
+    "nenhuma": 3,
+    "zoom_blur": 1,
+    "cortina": 1
+   },
+   "layouts": {
+    "cheio": 23,
+    "grafico_cheio": 8,
+    "tutorial": 5,
+    "painel": 1,
+    "dividido": 1
+   },
+   "tela_cheia_por_video": 2.0
+  }
+ },
+ "fala": {
+  "descricao": "fala para a câmera, opinião ou história, sem tutorial",
+  "referencias": 4,
+  "decupadas": 4,
+  "alvos": {
+   "duracao_s": 77.23,
+   "palavras_por_s": 3.81,
+   "pausa_max_s": 0.45,
+   "plano_medio_s": 8.04,
+   "cortes_por_min": 6.8,
+   "lufs": -16.6,
+   "fala_comeca_s": 0.0
+  },
+  "padroes": {
+   "grafismo_a_cada_s": 11.72,
+   "trecho_medio_s": 10.39,
+   "tipos_grafismo": {
+    "pilula": 8,
+    "manchete": 7,
+    "kicker": 3,
+    "cta": 3,
+    "pilulas": 2,
+    "fluxo": 1,
+    "checklist": 1
+   },
+   "transicoes": {
+    "seco": 16,
+    "punch": 6,
+    "nenhuma": 4,
+    "deslize": 1
+   },
+   "layouts": {
+    "cheio": 26,
+    "grafico_cheio": 1
+   },
+   "tela_cheia_por_video": 0.5
+  }
+ },
+ "anuncio": {
+  "descricao": "anúncio 9:16 de 20–70 s com gancho, demonstração e CTA",
+  "referencias": 7,
+  "decupadas": 6,
+  "alvos": {
+   "duracao_s": 65.42,
+   "palavras_por_s": 3.93,
+   "pausa_max_s": 0.44,
+   "plano_medio_s": 7.04,
+   "cortes_por_min": 6.7,
+   "lufs": -16.6,
+   "fala_comeca_s": 0.0
+  },
+  "padroes": {
+   "grafismo_a_cada_s": 11.44,
+   "trecho_medio_s": 7.06,
+   "tipos_grafismo": {
+    "pilula": 15,
+    "cta": 5,
+    "kicker": 5,
+    "pilulas": 3,
+    "cartoes": 2,
+    "manchete": 2,
+    "riscado": 1,
+    "checklist": 1,
+    "numero": 1
+   },
+   "transicoes": {
+    "seco": 19,
+    "punch": 13,
+    "nenhuma": 6,
+    "deslize": 3,
+    "zoom_blur": 2
+   },
+   "layouts": {
+    "cheio": 31,
+    "tutorial": 11,
+    "grafico_cheio": 1
+   },
+   "tela_cheia_por_video": 0.0
+  }
+ },
+ "aula": {
+  "descricao": "aula ou tutorial longo (horizontal), tela com rosto",
+  "referencias": 4,
+  "decupadas": 4,
+  "alvos": {
+   "duracao_s": 311.5,
+   "palavras_por_s": 3.42,
+   "pausa_max_s": 0.87,
+   "plano_medio_s": 83.35,
+   "cortes_por_min": 0.95,
+   "lufs": -17.1,
+   "fala_comeca_s": 0.0
+  },
+  "padroes": {
+   "grafismo_a_cada_s": 136.8,
+   "trecho_medio_s": 38.23,
+   "tipos_grafismo": {
+    "cartoes": 3,
+    "manchete": 3,
+    "cta": 2,
+    "fluxo": 2,
+    "checklist": 2,
+    "pilulas": 1,
+    "numero": 1
+   },
+   "transicoes": {
+    "seco": 21,
+    "nenhuma": 4,
+    "deslize": 3
+   },
+   "layouts": {
+    "tutorial": 12,
+    "grafico_cheio": 10,
+    "cheio": 4,
+    "painel": 2
+   },
+   "tela_cheia_por_video": 0.5
+  }
+ },
+ "animacao": {
+  "descricao": "vídeo montado só com cenas animadas ou encenação",
+  "referencias": 2,
+  "decupadas": 2,
+  "alvos": {
+   "duracao_s": 43.54,
+   "palavras_por_s": 1.63,
+   "pausa_max_s": 2.78,
+   "plano_medio_s": 6.07,
+   "cortes_por_min": 8.35,
+   "lufs": -15.7,
+   "fala_comeca_s": 0.28
+  },
+  "padroes": {
+   "grafismo_a_cada_s": 5.28,
+   "trecho_medio_s": 5.28,
+   "tipos_grafismo": {
+    "manchete": 10,
+    "checklist": 2,
+    "cta": 2,
+    "pilulas": 1,
+    "kicker": 1
+   },
+   "transicoes": {
+    "seco": 10,
+    "deslize": 3,
+    "punch": 2,
+    "nenhuma": 1
+   },
+   "layouts": {
+    "cheio": 9,
+    "grafico_cheio": 5,
+    "moldura": 2
+   },
+   "tela_cheia_por_video": 2.5
+  }
+ },
+ "react": {
+  "descricao": "reação a vídeo de terceiro (só com direitos)",
+  "referencias": 1,
+  "decupadas": 1,
+  "alvos": {
+   "duracao_s": 43.9,
+   "palavras_por_s": 3.87,
+   "pausa_max_s": 0.38,
+   "plano_medio_s": 21.95,
+   "cortes_por_min": 1.4,
+   "lufs": -17.2,
+   "fala_comeca_s": 0.0
+  },
+  "padroes": {
+   "grafismo_a_cada_s": 7.32,
+   "trecho_medio_s": 6.27,
+   "tipos_grafismo": {
+    "pilula": 2,
+    "checklist": 2,
+    "cartoes": 1,
+    "cta": 1
+   },
+   "transicoes": {
+    "seco": 6,
+    "nenhuma": 1
+   },
+   "layouts": {
+    "tela": 5,
+    "cheio": 2
+   },
+   "tela_cheia_por_video": 0
+  }
+ },
+ "carrossel_video": {
+  "descricao": "slides de carrossel animados",
+  "referencias": 1,
+  "decupadas": 1,
+  "alvos": {
+   "duracao_s": 19.14,
+   "palavras_por_s": 2.43,
+   "pausa_max_s": 0.36,
+   "plano_medio_s": 19.14,
+   "cortes_por_min": 0.0,
+   "lufs": -17.1,
+   "fala_comeca_s": 0.0
+  },
+  "padroes": {
+   "grafismo_a_cada_s": 6.38,
+   "trecho_medio_s": 6.38,
+   "tipos_grafismo": {
+    "manchete": 3
+   },
+   "transicoes": {
+    "seco": 2,
+    "nenhuma": 1
+   },
+   "layouts": {
+    "moldura": 3
+   },
+   "tela_cheia_por_video": 0
+  }
+ }
+}

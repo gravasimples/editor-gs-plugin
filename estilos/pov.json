@@ -1,0 +1,54 @@
+{
+ "nome": "pov",
+ "legenda": {
+  "modo": "linha",
+  "fonte": "Inter",
+  "peso": "Regular",
+  "tamanho_9x16": 48,
+  "tamanho_16x9": 38,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 6,
+  "maiusculas": false,
+  "animacao": "aparecer",
+  "contorno_px": 2,
+  "sombra_px": 2,
+  "altura_pct": 16
+ },
+ "montagem": {
+  "ritmo": "normal",
+  "corte_inteligente": true,
+  "silencio_min_s": 0.3,
+  "silencio_limiar_db": -35,
+  "margem_corte_s": 0.08,
+  "zoom_por_frase": false,
+  "clarao_transicao": false,
+  "tela_final_cta": false,
+  "terco_inferior": true,
+  "vinheta": false,
+  "slides_fundo": "marinho",
+  "jcut_s": 0.2,
+  "nivel": 1,
+  "gancho_animacao": "bloco"
+ },
+ "saida": {
+  "formatos": [
+   "9x16",
+   "16x9"
+  ],
+  "resolucao": "1080p",
+  "fps": 30,
+  "codec": "libx264",
+  "crf": 20,
+  "audio_kbps": 160
+ },
+ "descricao": "POV / bastidor: legenda pequena e minúscula, terço inferior, gancho em bloco, sem zoom, sem clarão e sem tela final. Parece gravado na hora, sem cara de anúncio.",
+ "temas": [
+  "bastidor",
+  "historia",
+  "depoimento"
+ ],
+ "casa": true
+}

@@ -1,0 +1,56 @@
+{
+ "id": "opiniao-quebra-crenca",
+ "ordem": 5,
+ "nome": "Opinião que quebra crença",
+ "energia": "dinamico",
+ "base_estilo": "opiniao",
+ "legenda": "cinetica-tipografica",
+ "resumo": "Afirmação forte no começo, a crença errada riscada, o argumento em tarjas e um fecho firme.",
+ "formatos": [
+  "fala"
+ ],
+ "temas": [
+  "opiniao",
+  "gancho",
+  "energia"
+ ],
+ "grafismos": {
+  "tipos": [
+   "manchete",
+   "riscado",
+   "pilula"
+  ],
+  "a_cada_s": 10,
+  "visual": [
+   "tarjas"
+  ]
+ },
+ "transicoes": {
+  "seco": 0.6,
+  "punch": 0.3,
+  "tremor": 0.1
+ },
+ "estrutura": [
+  "0–3 s: a frase que contraria o senso comum, em tarjas",
+  "a crença errada aparece riscada e trocada",
+  "argumento com prova real",
+  "fecho: a frase forte repetida de outro jeito"
+ ],
+ "regras": [
+  "Riscado só na troca de crença",
+  "Tremor no máximo uma vez, na frase mais forte",
+  "Plano fechado no rosto nas frases de impacto"
+ ],
+ "evitar": [
+  "hype ou adjetivo grandioso",
+  "efeito em toda frase",
+  "música que briga com a voz"
+ ],
+ "prompt": "Opinião que quebra crença: abra com a frase que contraria o comum em tarjas, mostre a crença errada riscada e trocada, argumente com prova real e feche firme. Punch nas frases de impacto, tremor só uma vez na mais forte, legenda tipográfica.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

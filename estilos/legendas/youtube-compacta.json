@@ -1,0 +1,26 @@
+{
+ "id": "youtube-compacta",
+ "nome": "Compacta (YouTube)",
+ "descricao": "Linha corrida e menor, até 6 palavras, sem karaokê. Para vídeo horizontal e aula longa.",
+ "temas": [
+  "youtube",
+  "aula",
+  "tutorial"
+ ],
+ "fora_da_marca": false,
+ "ordem": 12,
+ "legenda": {
+  "modo": "linha",
+  "fonte": "Inter",
+  "peso": "Bold",
+  "tamanho_9x16": 54,
+  "tamanho_16x9": 46,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 6,
+  "maiusculas": false,
+  "animacao": "aparecer"
+ }
+}

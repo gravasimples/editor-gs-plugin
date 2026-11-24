@@ -1,0 +1,50 @@
+{
+ "nome": "tutorial",
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 64,
+  "tamanho_16x9": 48,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 4,
+  "maiusculas": false,
+  "animacao": "nenhuma"
+ },
+ "montagem": {
+  "ritmo": "normal",
+  "corte_inteligente": true,
+  "silencio_min_s": 0.3,
+  "silencio_limiar_db": -35,
+  "margem_corte_s": 0.08,
+  "zoom_por_frase": false,
+  "clarao_transicao": false,
+  "tela_final_cta": true,
+  "terco_inferior": true,
+  "vinheta": false,
+  "slides_fundo": "papel",
+  "jcut_s": 0.3,
+  "nivel": 2
+ },
+ "saida": {
+  "formatos": [
+   "9x16",
+   "16x9"
+  ],
+  "resolucao": "1080p",
+  "fps": 30,
+  "codec": "libx264",
+  "crf": 20,
+  "audio_kbps": 160
+ },
+ "descricao": "Tema tutorial (OBS passo a passo): legenda menor e baixa para não cobrir a tela, terço inferior com o nome, slides claros (papel), J-cut na locução, sem zoom nem clarão.",
+ "temas": [
+  "tutorial",
+  "tela",
+  "aula"
+ ],
+ "casa": true
+}

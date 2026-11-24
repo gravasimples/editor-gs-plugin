@@ -1,0 +1,110 @@
+# Instala o Editor GS do zero num Mac Apple Silicon, SEM Homebrew no PATH, e confere que o app sobe. Roda a cada publicação e à mão
+# (Actions → Run workflow). É o único Mac de teste que temos: se este workflow falha, o instalador de Mac está quebrado.
+# O job "ffmpeg" guarda uma cópia do ffmpeg/ffprobe na release "ferramentas-mac" deste repositório; é de lá que o instalador baixa.
+name: teste-mac
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+    inputs:
+      refazer_ffmpeg:
+        description: "Baixar o ffmpeg de novo e substituir o da release"
+        type: boolean
+        default: false
+permissions:
+  contents: write
+jobs:
+  ffmpeg:
+    runs-on: macos-15
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - name: ffmpeg e ffprobe para a release ferramentas-mac
+        run: |
+          set -euo pipefail
+          if [ "${{ inputs.refazer_ffmpeg }}" != "true" ] && gh release view ferramentas-mac -R "$GITHUB_REPOSITORY" --json assets -q '.assets[].name' 2>/dev/null | grep -qx "ffmpeg-macos-arm64.tar.gz"; then
+            echo "a release já tem o ffmpeg; nada a fazer"; exit 0
+          fi
+          mkdir pacote && cd pacote
+          for p in ffmpeg ffprobe; do
+            curl -fL --retry 3 -o "$p.zip" "https://ffmpeg.martin-riedl.de/redirect/latest/macos/arm64/release/$p.zip"
+            unzip -o "$p.zip" && rm "$p.zip"; chmod +x "$p"; file "$p"; codesign -dv "$p" 2>&1 | head -5 || true
+          done
+          ./ffmpeg -version | head -3; ./ffprobe -version | head -1
+          # o editor precisa de legenda queimada (libass), texto (freetype) e H.264/AAC
+          for f in subtitles ass drawtext; do ./ffmpeg -hide_banner -filters | grep -qE " $f +" || { echo "FALTA o filtro $f"; exit 1; }; done
+          ./ffmpeg -hide_banner -encoders | grep -q libx264 || { echo "FALTA libx264"; exit 1; }
+          ./ffmpeg -hide_banner -encoders | grep -qE " aac +" || { echo "FALTA aac"; exit 1; }
+          printf 'ffmpeg e ffprobe para macOS (Apple Silicon), builds estaticos de https://ffmpeg.martin-riedl.de (licenca GPL).\nCodigo-fonte: https://ffmpeg.org/download.html e os scripts de build em https://git.martin-riedl.de/ffmpeg/build-script\nCopiado em %s. Versao:\n%s\n' "$(date +%F)" "$(./ffmpeg -version | head -1)" > LICENCA-FFMPEG.txt
+          tar -czf ../ffmpeg-macos-arm64.tar.gz ffmpeg ffprobe LICENCA-FFMPEG.txt
+          cd .. && ls -l ffmpeg-macos-arm64.tar.gz
+          gh release view ferramentas-mac -R "$GITHUB_REPOSITORY" >/dev/null 2>&1 || gh release create ferramentas-mac -R "$GITHUB_REPOSITORY" --prerelease --target "$GITHUB_SHA" --title "Ferramentas para macOS" --notes "ffmpeg e ffprobe (Apple Silicon) que o instalador do Editor GS baixa no Mac. Builds de ffmpeg.martin-riedl.de, licença GPL; ver LICENCA-FFMPEG.txt dentro do arquivo."
+          gh release upload ferramentas-mac ffmpeg-macos-arm64.tar.gz -R "$GITHUB_REPOSITORY" --clobber
+  instalar:
+    needs: ffmpeg
+    runs-on: macos-15
+    timeout-minutes: 45
+    env:
+      LIMPO: "/usr/bin:/bin:/usr/sbin:/sbin"   # PATH de um Mac recém-saído da caixa: sem Homebrew, sem Node, sem ffmpeg
+    steps:
+      - uses: actions/checkout@v4
+      - name: Simula a pasta do plugin (cache do Claude Code)
+        run: |
+          mkdir -p "$HOME/.claude/plugins/cache/editor-gs/editor-gs"
+          cp -R "$GITHUB_WORKSPACE" "$HOME/.claude/plugins/cache/editor-gs/editor-gs/teste"
+          echo "RAIZ=$HOME/.claude/plugins/cache/editor-gs/editor-gs/teste" >> "$GITHUB_ENV"
+          sw_vers; uname -m; ls -l "$HOME/.claude/plugins/cache/editor-gs/editor-gs/teste/scripts/"*.sh | head -5
+      - name: Instalar (motor), sem Homebrew
+        run: |
+          inicio=$(date +%s)
+          env -i HOME="$HOME" USER="$USER" TMPDIR="$TMPDIR" LANG=en_US.UTF-8 PATH="$LIMPO" CLAUDE_PLUGIN_ROOT="$RAIZ" bash "$RAIZ/scripts/editor-gs.sh" instalar
+          echo "TEMPO DE INSTALACAO: $(( $(date +%s) - inicio )) s"
+      - name: Subir e conferir o app
+        run: |
+          env -i HOME="$HOME" USER="$USER" TMPDIR="$TMPDIR" LANG=en_US.UTF-8 PATH="$LIMPO" bash "$RAIZ/scripts/editor-gs.sh" subir
+          for i in $(seq 1 20); do curl -fs -m 3 http://127.0.0.1:3200/api/health && break; sleep 3; done
+          curl -fs -m 5 http://127.0.0.1:3200/api/health
+          curl -fs -m 5 -o /dev/null -w "pagina inicial: %{http_code}\n" http://127.0.0.1:3200/
+          curl -s -m 5 -o /dev/null -w "editor manual: %{http_code}\n" http://127.0.0.1:3200/editor/
+      - name: O app acha o ffmpeg e o Node portáteis
+        run: |
+          cd "$RAIZ"
+          env -i HOME="$HOME" USER="$USER" TMPDIR="$TMPDIR" LANG=en_US.UTF-8 PATH="$LIMPO" bash -c '
+            set -a; . "$HOME/EditorGS/.env"; set +a; export EDITOR_GS_HOME="$HOME/EditorGS"
+            "$HOME/.venvs/editor-gs/bin/python" -c "
+          import shutil, sys
+          from servico import plataforma
+          plataforma.aplicar_path()
+          ff, fp, nb = shutil.which(\"ffmpeg\"), shutil.which(\"ffprobe\"), plataforma.node_bin()
+          print(\"ffmpeg:\", ff); print(\"ffprobe:\", fp); print(\"node:\", nb, plataforma.npx())
+          ok = all(x and \"EditorGS/bin\" in str(x) for x in (ff, fp, nb))
+          sys.exit(0 if ok else 1)
+          "'
+          cat "$HOME/EditorGS/workspace/.mcp.json"
+          "$HOME/.venvs/editor-gs/bin/python" -c "import faster_whisper, mediapipe, onnxruntime, cv2, av; print('libs ok')"
+          du -sh "$HOME/.venvs/editor-gs" "$RAIZ/remotion/node_modules" "$HOME/EditorGS/bin" 2>/dev/null
+      - name: Testes de edição no Mac (informativo)
+        continue-on-error: true
+        run: |
+          cd "$RAIZ"
+          for t in teste_gateway_acesso teste_cortar_legendar teste_editor_de_video teste_legenda_cinetica teste_grafismos; do
+            echo "=== $t"
+            env -i HOME="$HOME" USER="$USER" TMPDIR="$TMPDIR" LANG=en_US.UTF-8 PATH="$LIMPO" EDITOR_GS_HOME="$HOME/EditorGS" EDITOR_GS_NODE_BIN="$HOME/EditorGS/bin/node/bin" \
+              "$HOME/.venvs/editor-gs/bin/python" -I -X utf8 "testes/$t.py" 2>&1 | grep -E "FAIL|falha|Traceback|Error" | tail -8 || true
+          done
+      - name: Simula versão nova do plugin (atualização)
+        run: |
+          NOVA="$HOME/.claude/plugins/cache/editor-gs/editor-gs/teste2"
+          cp -R "$GITHUB_WORKSPACE" "$NOVA"
+          env -i HOME="$HOME" USER="$USER" TMPDIR="$TMPDIR" LANG=en_US.UTF-8 PATH="$LIMPO" bash "$NOVA/scripts/editor-gs.sh" subir
+          for i in $(seq 1 20); do curl -fs -m 3 http://127.0.0.1:3200/api/health && break; sleep 3; done
+          curl -fs -m 5 http://127.0.0.1:3200/api/health
+          test -d "$NOVA/remotion/node_modules" && grep -q "teste2/mcp" "$HOME/EditorGS/workspace/.mcp.json" && echo "atualizacao ok"
+      - name: Instalador de uma linha até o login (informativo)
+        continue-on-error: true
+        run: |
+          env -i HOME="$HOME" USER="$USER" TMPDIR="$TMPDIR" LANG=en_US.UTF-8 PATH="$LIMPO" bash -c 'cat "$0" | bash -s -- GS1-teste' "$GITHUB_WORKSPACE/scripts/instalar-editor-gs.sh" < /dev/null 2>&1 | tail -25 || true
+      - name: Logs (sempre)
+        if: always()
+        run: tail -60 "$HOME"/EditorGS/logs/*.log 2>/dev/null || true

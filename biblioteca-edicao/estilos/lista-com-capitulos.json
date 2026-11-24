@@ -1,0 +1,59 @@
+{
+ "id": "lista-com-capitulos",
+ "ordem": 4,
+ "nome": "Lista numerada com capítulos",
+ "energia": "dinamico",
+ "base_estilo": "lista",
+ "legenda": "karaoke-pop",
+ "resumo": "3 erros, 5 passos: cada item vira capítulo com pílula 1/3, número grande na abertura e checklist no fim.",
+ "formatos": [
+  "fala",
+  "fala_tela"
+ ],
+ "temas": [
+  "lista",
+  "tutorial"
+ ],
+ "grafismos": {
+  "tipos": [
+   "numero",
+   "checklist",
+   "pilula",
+   "kicker"
+  ],
+  "a_cada_s": 6,
+  "visual": [
+   "3d"
+  ]
+ },
+ "transicoes": {
+  "seco": 0.6,
+  "deslize": 0.3,
+  "punch": 0.1
+ },
+ "montagem": {
+  "capitulos_obrigatorios": true
+ },
+ "estrutura": [
+  "0–3 s: o número da lista dito e mostrado",
+  "cada item: pílula n/total + frase do item + prova",
+  "fim: checklist com todos os itens marcados"
+ ],
+ "regras": [
+  "Deslize na entrada de cada item",
+  "O número do item aparece quando é dito",
+  "Checklist final só com o que foi dito"
+ ],
+ "evitar": [
+  "item sem prova",
+  "capítulo sem número",
+  "gráfico extra entre os itens"
+ ],
+ "prompt": "Lista numerada: cada item vira um capítulo com pílula 1/N, deslize na entrada do item e o número aparecendo quando eu digo. Abra mostrando o número da lista em 3D e feche com um checklist dos itens.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

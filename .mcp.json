@@ -1,0 +1,6 @@
+{
+  "editor-gs": {
+    "command": "${CLAUDE_CODE_GIT_BASH_PATH:-bash}",
+    "args": ["${CLAUDE_PLUGIN_ROOT}/mcp/editor-gs/servidor.sh"]
+  }
+}

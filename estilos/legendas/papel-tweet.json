@@ -1,0 +1,28 @@
+{
+ "id": "papel-tweet",
+ "nome": "Caixa papel",
+ "descricao": "Texto marinho numa caixa clara, como o carrossel tipo tweet. Para opinião e novidade.",
+ "temas": [
+  "opiniao",
+  "novidade"
+ ],
+ "fora_da_marca": false,
+ "ordem": 11,
+ "legenda": {
+  "modo": "linha",
+  "fonte": "Inter",
+  "peso": "Bold",
+  "tamanho_9x16": 60,
+  "tamanho_16x9": 46,
+  "cor_texto": "#000921",
+  "cor_destaque": "#E9760D",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 4,
+  "maiusculas": false,
+  "animacao": "zoom",
+  "caixa": true,
+  "cor_caixa": "#F2F2F2",
+  "caixa_alpha": "00"
+ }
+}

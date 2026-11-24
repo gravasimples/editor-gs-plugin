@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <!-- manchete: manchete com kicker (etiqueta laranja em cima) na parte de baixo do quadro, Inter ExtraBold, marinho #000921 + laranja #F79615.
+    DADOS: {"kicker": "ÁUDIO", "manchete": "Microfone caro não resolve", "destaque": "não resolve"}  (destaque = trecho da manchete que fica laranja)
+    Marcadores {{LARGURA}} {{ALTURA}} {{DURACAO}} {{FPS}} {{DADOS}} são preenchidos por editor_video/hyperframes.py.
+    O comentário fica dentro de <head>: o lint do HyperFrames reclama de qualquer coisa antes do doctype. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width={{LARGURA}}, height={{ALTURA}}" />
+    <script src="gsap.min.js"></script>
+    <style>
+      @font-face { font-family: "Inter"; src: url("Inter-ExtraBold.ttf"); font-weight: 800; }
+      @font-face { font-family: "Inter"; src: url("Inter-Bold.ttf"); font-weight: 700; }
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      html, body { width: {{LARGURA}}px; height: {{ALTURA}}px; overflow: hidden; background: transparent; }
+      #root { position: relative; width: 100%; height: 100%; font-family: "Inter", sans-serif; }
+      #caixa { position: absolute; left: 6%; right: 6%; bottom: 14%; display: flex; flex-direction: column; align-items: flex-start; gap: 0.6vh; }
+      #kicker { display: inline-block; background: linear-gradient(90deg, #F79615, #E9760D); color: #000921; font-weight: 800;
+                font-size: calc({{ALTURA}}px * 0.018); letter-spacing: 0.08em; text-transform: uppercase; padding: 0.55em 1.1em; border-radius: 999px; }
+      #manchete { background: #000921; color: #FFFFFF; font-weight: 800; font-size: calc({{ALTURA}}px * 0.036); line-height: 1.12;
+                  padding: 0.45em 0.6em; border-radius: 20px; }
+      #manchete .palavra { display: inline-block; white-space: pre; }
+      #manchete .destaque { color: #F79615; }
+    </style>
+  </head>
+  <body>
+    <div id="root" data-composition-id="manchete" data-start="0" data-duration="{{DURACAO}}" data-width="{{LARGURA}}" data-height="{{ALTURA}}" data-fps="{{FPS}}">
+      <div id="caixa" class="clip" data-start="0" data-duration="{{DURACAO}}">
+        <div id="kicker"></div>
+        <div id="manchete"></div>
+      </div>
+    </div>
+    <script>
+      const DADOS = {{DADOS}};
+      const DUR = {{DURACAO}};
+      const kicker = document.getElementById("kicker");
+      const manchete = document.getElementById("manchete");
+      kicker.textContent = DADOS.kicker || "";
+      if (!DADOS.kicker) kicker.style.display = "none";
+      const texto = DADOS.manchete || "";
+      const dest = (DADOS.destaque || "").trim().toLowerCase();
+      const dIni = dest ? texto.toLowerCase().indexOf(dest) : -1;
+      let pos = 0;
+      texto.split(/(\s+)/).forEach((parte) => {
+        if (!parte) return;
+        const span = document.createElement("span");
+        span.textContent = parte;
+        if (/\s+/.test(parte)) { manchete.appendChild(span); pos += parte.length; return; }
+        span.className = "palavra";
+        if (dIni >= 0 && pos >= dIni && pos < dIni + dest.length) span.classList.add("destaque");
+        manchete.appendChild(span); pos += parte.length;
+      });
+      const tl = gsap.timeline({ paused: true });
+      tl.fromTo("#kicker", { opacity: 0, x: -40 }, { opacity: 1, x: 0, duration: 0.35, ease: "power3.out" }, 0);
+      tl.fromTo("#manchete", { opacity: 0, y: 50, scale: 0.96 }, { opacity: 1, y: 0, scale: 1, duration: 0.45, ease: "back.out(1.4)" }, 0.12);
+      tl.from("#manchete .palavra", { opacity: 0, y: 14, duration: 0.25, stagger: 0.05, ease: "power2.out" }, 0.25);
+      if (DUR > 1.2) tl.to("#caixa", { opacity: 0, y: 30, duration: 0.35, ease: "power2.in" }, Math.max(0.8, DUR - 0.4));
+      window.__timelines = window.__timelines || {};
+      window.__timelines["manchete"] = tl;
+      tl.seek(0);
+    </script>
+  </body>
+</html>

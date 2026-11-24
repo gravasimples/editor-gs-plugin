@@ -1,0 +1,51 @@
+// Ícones de traço (16/11/2026): um desenho só para o menu inteiro, no lugar da mistura de emoji e símbolo. 24×24, cor = currentColor.
+const P: Record<string, string> = {
+  novo: 'M12 5v14M5 12h14',
+  aprovacoes: 'M20 6 9 17l-5-5',
+  laboratorio: 'M9 3h6M10 3v6L4.5 18.5A1.7 1.7 0 0 0 6 21h12a1.7 1.7 0 0 0 1.5-2.5L14 9V3M7.5 14h9',
+  campanhas: 'M12 21a9 9 0 1 1 0-18 9 9 0 0 1 0 18Zm0-5a4 4 0 1 1 0-8 4 4 0 0 1 0 8Z',
+  clipador: 'M6 9a3 3 0 1 0 0-6 3 3 0 0 0 0 6Zm0 12a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM20 4 8.1 15.9M14.5 14.5 20 20M8.1 8.1 12 12',
+  ideias: 'M9 18h6M10 21h4M12 3a6 6 0 0 0-3.5 10.9c.6.5 1 1.2 1 2.1h5c0-.9.4-1.6 1-2.1A6 6 0 0 0 12 3Z',
+  biblioteca: 'M4 4h6v16H4zM14 4h6v16h-6zM4 9h6M14 9h6',
+  pecas: 'M3 7l9-4 9 4-9 4-9-4Zm0 5 9 4 9-4M3 17l9 4 9-4',
+  textos: 'M4 20h4L19 9l-4-4L4 16v4ZM13.5 6.5l4 4',
+  estilos: 'M12 3a9 9 0 1 0 0 18c1 0 1.5-.7 1.5-1.5 0-.4-.2-.8-.4-1.1-.3-.3-.4-.7-.4-1.1 0-.8.7-1.5 1.5-1.5H16a5 5 0 0 0 5-5c0-4.4-4-7.8-9-7.8ZM7.5 12h.01M10 7.5h.01M15 8h.01',
+  demos: 'M7 4v16l13-8L7 4Z',
+  fluxos: 'M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3M18 3v4h-4M6 21v-4h4',
+  referencias: 'M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1',
+  ganchos: 'M14 3v8a5 5 0 1 1-10 0M14 3h3M4 11l-1 2',
+  acervo: 'M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14ZM20 20l-4-4',
+  marca: 'M12 2 3 12l9 10 9-10-9-10Z',
+  metricas: 'M4 20V10M10 20V4M16 20v-7M22 20H2',
+  redes: 'M4 6h16v14H4zM4 10h16M9 3v4M15 3v4',
+  voz: 'M12 15a3 3 0 0 0 3-3V6a3 3 0 0 0-6 0v6a3 3 0 0 0 3 3Zm-6-3a6 6 0 0 0 12 0M12 18v3',
+  skills: 'M10 3H5a2 2 0 0 0-2 2v5h2a2 2 0 1 1 0 4H3v5a2 2 0 0 0 2 2h5v-2a2 2 0 1 1 4 0v2h5a2 2 0 0 0 2-2v-5h-2a2 2 0 1 1 0-4h2V5a2 2 0 0 0-2-2h-5v2a2 2 0 1 1-4 0V3Z',
+  operacao: 'M12 15a3 3 0 1 0 0-6 3 3 0 0 0 0 6ZM19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z',
+  ajuda: 'M7 2h10a1 1 0 0 1 1 1v18a1 1 0 0 1-1 1H7a1 1 0 0 1-1-1V3a1 1 0 0 1 1-1ZM11 18h2',
+  receitas: 'M4 19.5A2.5 2.5 0 0 1 6.5 17H20V3H6.5A2.5 2.5 0 0 0 4 5.5v14ZM4 19.5A2.5 2.5 0 0 0 6.5 22H20v-5M9 7h7M9 11h5',
+  conversa: 'M21 12a8 8 0 0 1-11.6 7.1L4 21l1.9-5.4A8 8 0 1 1 21 12Z',
+  lixeira: 'M4 7h16M10 11v6M14 11v6M5 7l1 13a1 1 0 0 0 1 1h10a1 1 0 0 0 1-1l1-13M9 7V4h6v3',
+  busca: 'M11 18a7 7 0 1 0 0-14 7 7 0 0 0 0 14ZM20 20l-4-4',
+  ajustes: 'M4 6h10M18 6h2M4 12h4M12 12h8M4 18h12M20 18h0M14 4v4M8 10v4M16 16v4',
+  // fase 2 (17/11/2026): tipos de entrega e ações dos cartões
+  video: 'M3 6h12v12H3zM15 10l6-3v10l-6-3',
+  imagem: 'M4 4h16v16H4zM4 16l5-5 4 4 3-3 4 4M15 9h.01',
+  carrossel: 'M7 5h10v14H7zM3 7v10M21 7v10',
+  texto: 'M5 5h14M5 10h14M5 15h9M5 20h6',
+  legenda: 'M3 5h18v14H3zM7 14h4M13 14h4M7 10h10',
+  editavel: 'M4 6h16M4 12h10M4 18h13M17 10l3 2-3 2',
+  arquivo: 'M14 3H6v18h12V7l-4-4ZM14 3v4h4',
+  play: 'M8 5v14l11-7L8 5Z',
+  baixar: 'M12 4v11M7 10l5 5 5-5M5 20h14',
+  abrir: 'M14 4h6v6M20 4l-9 9M18 14v6H4V6h6',
+  recarregar: 'M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5',
+  alerta: 'M12 3 2 20h20L12 3ZM12 10v4M12 17h.01',
+  fechar: 'M6 6l12 12M18 6 6 18',
+  relogio: 'M12 21a9 9 0 1 0 0-18 9 9 0 0 0 0 18ZM12 7v5l3 2',
+  seta: 'M5 12h14M13 6l6 6-6 6',
+}
+
+export function Icone({ nome, className = 'h-[18px] w-[18px]' }: { nome: string; className?: string }) {
+  const d = P[nome] || P.novo
+  return <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth={1.7} strokeLinecap="round" strokeLinejoin="round" className={className} aria-hidden><path d={d} /></svg>
+}

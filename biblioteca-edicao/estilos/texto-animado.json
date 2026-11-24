@@ -1,0 +1,54 @@
+{
+ "id": "texto-animado",
+ "ordem": 14,
+ "nome": "Vídeo só de texto animado",
+ "energia": "dinamico",
+ "base_estilo": "padrao",
+ "legenda": "display-unbounded",
+ "resumo": "Carrossel em vídeo ou cena montada sem rosto: uma ideia por cena, manchetes entrando em ritmo de leitura.",
+ "formatos": [
+  "animacao",
+  "carrossel_video"
+ ],
+ "temas": [
+  "novidade",
+  "lista",
+  "dica"
+ ],
+ "grafismos": {
+  "tipos": [
+   "manchete",
+   "checklist",
+   "numero"
+  ],
+  "a_cada_s": 5,
+  "visual": [
+   "card"
+  ]
+ },
+ "transicoes": {
+  "seco": 0.6,
+  "deslize": 0.4
+ },
+ "estrutura": [
+  "uma ideia por cena, 4 a 6 s",
+  "destaque laranja em uma palavra por título",
+  "última cena com CTA"
+ ],
+ "regras": [
+  "Tempo de leitura: 0,4 s por palavra no mínimo",
+  "Fundo marinho da marca",
+  "Trilha baixa contínua"
+ ],
+ "evitar": [
+  "texto longo numa cena",
+  "mais de um destaque por título"
+ ],
+ "prompt": "Vídeo só de texto animado: uma ideia por cena de 4 a 6 s, manchetes entrando com deslize no fundo marinho, uma palavra laranja por título, tempo de leitura folgado e CTA na última cena.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

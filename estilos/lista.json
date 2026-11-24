@@ -1,0 +1,62 @@
+{
+ "nome": "lista",
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 78,
+  "tamanho_16x9": 58,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 3,
+  "maiusculas": true,
+  "animacao": "pop",
+  "altura_pct": 20
+ },
+ "montagem": {
+  "ritmo": "normal",
+  "corte_inteligente": true,
+  "silencio_min_s": 0.3,
+  "silencio_limiar_db": -35,
+  "margem_corte_s": 0.08,
+  "zoom_por_frase": true,
+  "clarao_transicao": true,
+  "tela_final_cta": true,
+  "terco_inferior": true,
+  "vinheta": false,
+  "slides_fundo": "marinho",
+  "jcut_s": 0.0,
+  "ritmo_zoom_s": 4,
+  "palavras_chave": "auto",
+  "barra_progresso": true,
+  "sfx": true,
+  "nivel": 3,
+  "capitulos_obrigatorios": true,
+  "broll": "auto",
+  "gancho_animacao": "palavra",
+  "trilha": "auto",
+  "trilha_volume_db": -20,
+  "capitulos": "auto",
+  "grafismos": "auto",
+  "transicoes": "auto"
+ },
+ "saida": {
+  "formatos": [
+   "9x16",
+   "16x9"
+  ],
+  "resolucao": "1080p",
+  "fps": 30,
+  "codec": "libx264",
+  "crf": 20,
+  "audio_kbps": 160
+ },
+ "descricao": "Lista numerada (\"3 erros\", \"5 passos\"): tudo do nível profissional + capítulos obrigatórios (pílula 1/3, 2/3… em cada item, dados pelo Editor em `capitulos`), palavra-chave do item na tela e tela final com CTA de salvar. Fase B (07/11/2026): grafismos semânticos no peito (plano do agente com planejar_grafismos; sem plano, regras) e legenda embaixo, como no Máquina. Fase E (08/11/2026): gramática de corte (seco com troca de enquadramento, punch na ênfase, transição forte variada na troca de assunto, câmera sempre andando) e animações de entrada/saída variadas.",
+ "temas": [
+  "lista",
+  "tutorial"
+ ],
+ "casa": true
+}

@@ -1,0 +1,717 @@
+{
+ "versao": 2,
+ "atualizado": "2026-11-10",
+ "itens": [
+  {
+   "id": "legenda-tipografica",
+   "categoria": "animacao",
+   "subcategoria": "legenda",
+   "nome": "Legenda cinética tipográfica",
+   "descricao": "Cada palavra da legenda entra na hora em que é falada, com giro leve e escala; a palavra falada fica laranja. Desenhada pelo Remotion (GSAP SplitText), sem arquivo ASS.",
+   "temas": [
+    "gancho",
+    "opiniao",
+    "energia",
+    "anuncio"
+   ],
+   "como_pedir": "legenda cinética tipográfica",
+   "parametro": "montar_remotion(palavras_json=..., estilo='{\"base\": \"<estilo>\", \"legenda_modelo\": \"cinetica-tipografica\"}') sem legenda_ass; ou legenda.animacao = \"tipografica\"",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "legenda_modelo": "cinetica-tipografica"
+    }
+   }
+  },
+  {
+   "id": "legenda-maquina",
+   "categoria": "animacao",
+   "subcategoria": "legenda",
+   "nome": "Legenda cinética máquina",
+   "descricao": "As letras vão sendo digitadas no ritmo da fala, com cursor laranja piscando. Desenhada pelo Remotion (GSAP SplitText), sem arquivo ASS.",
+   "temas": [
+    "historia",
+    "bastidor",
+    "tutorial"
+   ],
+   "como_pedir": "legenda máquina de escrever",
+   "parametro": "montar_remotion(palavras_json=..., estilo='{\"base\": \"<estilo>\", \"legenda_modelo\": \"cinetica-maquina\"}') sem legenda_ass; ou legenda.animacao = \"maquina\"",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "legenda_modelo": "cinetica-maquina"
+    }
+   }
+  },
+  {
+   "id": "legenda-onda",
+   "categoria": "animacao",
+   "subcategoria": "legenda",
+   "nome": "Legenda cinética em onda",
+   "descricao": "As palavras sobem conforme são faladas; na palavra que importa, as letras fazem uma onda em laranja. Desenhada pelo Remotion (GSAP SplitText), sem arquivo ASS.",
+   "temas": [
+    "dica",
+    "lista",
+    "energia",
+    "gancho"
+   ],
+   "como_pedir": "legenda cinética em onda",
+   "parametro": "montar_remotion(palavras_json=..., estilo='{\"base\": \"<estilo>\", \"legenda_modelo\": \"cinetica-onda\"}') sem legenda_ass; ou legenda.animacao = \"onda\"",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "legenda_modelo": "cinetica-onda"
+    }
+   }
+  },
+  {
+   "id": "legenda-tremor",
+   "categoria": "animacao",
+   "subcategoria": "legenda",
+   "nome": "Tremor na palavra de ênfase",
+   "descricao": "A palavra que importa em cada linha da legenda cinética treme por meio segundo (GSAP CustomWiggle) e dá um pulo de escala. Só com as legendas cinéticas (tipográfica, máquina ou onda).",
+   "temas": [
+    "energia",
+    "gancho",
+    "anuncio"
+   ],
+   "como_pedir": "tremor na palavra de ênfase da legenda",
+   "parametro": "montar_remotion(legenda_tremor=True) junto de uma legenda cinética, ou estilo inline com legenda.tremor = true (ex.: '{\"legenda_modelo\": \"cinetica-tipografica\", \"legenda\": {\"tremor\": true}}')",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "legenda_modelo": "cinetica-tipografica",
+     "legenda_tremor": true,
+     "ritmo_zoom_s": 2
+    }
+   }
+  },
+  {
+   "id": "zoom-frase",
+   "categoria": "animacao",
+   "nome": "Zoom por frase",
+   "descricao": "O enquadramento alterna entre aberto e fechado a cada frase. Dá ritmo sem cortar.",
+   "temas": [
+    "tutorial",
+    "dica",
+    "opiniao"
+   ],
+   "como_pedir": "zoom por frase",
+   "parametro": "montar_remotion(zoom=True)",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "zoom": true
+    }
+   }
+  },
+  {
+   "id": "ritmo-4s",
+   "categoria": "animacao",
+   "nome": "Enquadramento a cada 4 s",
+   "descricao": "Troca o enquadramento num ritmo fixo, para nada ficar parado (na prévia, a cada 2 s).",
+   "temas": [
+    "tutorial",
+    "lista",
+    "energia"
+   ],
+   "como_pedir": "ritmo de enquadramento de 4 s",
+   "parametro": "ritmo_zoom_s=4",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "ritmo_zoom_s": 2
+    }
+   }
+  },
+  {
+   "id": "clarao",
+   "categoria": "animacao",
+   "nome": "Clarão no corte",
+   "descricao": "Um flash branco rápido em cada ponto de corte. Esconde o pulo e marca a mudança.",
+   "temas": [
+    "opiniao",
+    "energia",
+    "anuncio"
+   ],
+   "como_pedir": "clarão nos cortes",
+   "parametro": "montar_remotion(clarao=True, edl_json)",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "clarao": true,
+     "cortes": [
+      2.2,
+      4.6
+     ]
+    }
+   }
+  },
+  {
+   "id": "gancho-palavra",
+   "categoria": "animacao",
+   "nome": "Gancho palavra por palavra",
+   "descricao": "A frase de abertura entra uma palavra de cada vez, com o destaque em laranja.",
+   "temas": [
+    "gancho",
+    "anuncio",
+    "lista",
+    "opiniao"
+   ],
+   "como_pedir": "gancho animado palavra por palavra",
+   "parametro": "gancho_animacao=\"palavra\"",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "frase_impacto": "Depende da sua webcam",
+     "frase_destaque": "webcam",
+     "gancho_animacao": "palavra"
+    }
+   }
+  },
+  {
+   "id": "gancho-bloco",
+   "categoria": "animacao",
+   "nome": "Gancho em bloco",
+   "descricao": "A frase de abertura entra inteira numa caixa marinho, de baixo para cima.",
+   "temas": [
+    "tutorial",
+    "dica",
+    "historia"
+   ],
+   "como_pedir": "frase de impacto na abertura",
+   "parametro": "frase_impacto",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "frase_impacto": "Depende da sua webcam",
+     "frase_destaque": "webcam",
+     "gancho_animacao": "bloco"
+    }
+   }
+  },
+  {
+   "id": "vinheta",
+   "categoria": "animacao",
+   "nome": "Vinheta de abertura",
+   "descricao": "1 s de abertura com o nome da marca antes do vídeo começar.",
+   "temas": [
+    "opiniao",
+    "youtube",
+    "aula"
+   ],
+   "como_pedir": "vinheta de abertura",
+   "parametro": "vinheta=True",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "vinheta": true
+    }
+   }
+  },
+  {
+   "id": "fade",
+   "categoria": "transicao",
+   "nome": "Fade",
+   "descricao": "Uma cena dissolve na outra. Neutra, serve para tudo.",
+   "temas": [
+    "tutorial",
+    "historia",
+    "aula"
+   ],
+   "como_pedir": "transição fade entre as cenas",
+   "parametro": "montar_locucao(transicao=\"fade\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "fade"
+    }
+   }
+  },
+  {
+   "id": "dissolve",
+   "categoria": "transicao",
+   "nome": "Dissolver",
+   "descricao": "Pontilhado que mistura as cenas. Mais orgânica que o fade.",
+   "temas": [
+    "historia",
+    "bastidor"
+   ],
+   "como_pedir": "transição dissolve entre as cenas",
+   "parametro": "montar_locucao(transicao=\"dissolve\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "dissolve"
+    }
+   }
+  },
+  {
+   "id": "fadeblack",
+   "categoria": "transicao",
+   "nome": "Passa pelo preto",
+   "descricao": "Escurece e volta. Separa blocos ou capítulos.",
+   "temas": [
+    "aula",
+    "youtube",
+    "historia"
+   ],
+   "como_pedir": "transição fadeblack entre as cenas",
+   "parametro": "montar_locucao(transicao=\"fadeblack\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "fadeblack"
+    }
+   }
+  },
+  {
+   "id": "fadewhite",
+   "categoria": "transicao",
+   "nome": "Passa pelo branco",
+   "descricao": "Clareia e volta. Leve, combina com virada positiva.",
+   "temas": [
+    "dica",
+    "novidade"
+   ],
+   "como_pedir": "transição fadewhite entre as cenas",
+   "parametro": "montar_locucao(transicao=\"fadewhite\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "fadewhite"
+    }
+   }
+  },
+  {
+   "id": "smoothleft",
+   "categoria": "transicao",
+   "nome": "Deslizar suave",
+   "descricao": "A cena nova empurra a antiga para a esquerda, com suavidade.",
+   "temas": [
+    "lista",
+    "tutorial",
+    "dica"
+   ],
+   "como_pedir": "transição smoothleft entre as cenas",
+   "parametro": "montar_locucao(transicao=\"smoothleft\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "smoothleft"
+    }
+   }
+  },
+  {
+   "id": "smoothup",
+   "categoria": "transicao",
+   "nome": "Subir suave",
+   "descricao": "A cena nova sobe. Boa para passos de uma lista.",
+   "temas": [
+    "lista",
+    "tutorial"
+   ],
+   "como_pedir": "transição smoothup entre as cenas",
+   "parametro": "montar_locucao(transicao=\"smoothup\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "smoothup"
+    }
+   }
+  },
+  {
+   "id": "slideleft",
+   "categoria": "transicao",
+   "nome": "Deslizar seco",
+   "descricao": "Empurra a cena para o lado sem suavizar. Mais energia.",
+   "temas": [
+    "energia",
+    "anuncio"
+   ],
+   "como_pedir": "transição slideleft entre as cenas",
+   "parametro": "montar_locucao(transicao=\"slideleft\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "slideleft"
+    }
+   }
+  },
+  {
+   "id": "wipeleft",
+   "categoria": "transicao",
+   "nome": "Cortina",
+   "descricao": "Uma borda varre a tela trocando as cenas.",
+   "temas": [
+    "antes-depois",
+    "novidade"
+   ],
+   "como_pedir": "transição wipeleft entre as cenas",
+   "parametro": "montar_locucao(transicao=\"wipeleft\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "wipeleft"
+    }
+   }
+  },
+  {
+   "id": "circleopen",
+   "categoria": "transicao",
+   "nome": "Círculo abrindo",
+   "descricao": "A cena nova abre a partir do centro. Revelação.",
+   "temas": [
+    "novidade",
+    "antes-depois",
+    "anuncio"
+   ],
+   "como_pedir": "transição circleopen entre as cenas",
+   "parametro": "montar_locucao(transicao=\"circleopen\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "circleopen"
+    }
+   }
+  },
+  {
+   "id": "zoomin",
+   "categoria": "transicao",
+   "nome": "Zoom para dentro",
+   "descricao": "Mergulha na cena seguinte. Impacto.",
+   "temas": [
+    "gancho",
+    "energia",
+    "anuncio"
+   ],
+   "como_pedir": "transição zoomin entre as cenas",
+   "parametro": "montar_locucao(transicao=\"zoomin\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "zoomin"
+    }
+   }
+  },
+  {
+   "id": "pixelize",
+   "categoria": "transicao",
+   "nome": "Pixelar",
+   "descricao": "Quebra em pixels e remonta. Tom de tecnologia.",
+   "temas": [
+    "novidade",
+    "energia"
+   ],
+   "como_pedir": "transição pixelize entre as cenas",
+   "parametro": "montar_locucao(transicao=\"pixelize\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "pixelize"
+    }
+   }
+  },
+  {
+   "id": "hblur",
+   "categoria": "transicao",
+   "nome": "Desfoque",
+   "descricao": "Desfoca horizontal e troca. Rápida e moderna.",
+   "temas": [
+    "lista",
+    "dica"
+   ],
+   "como_pedir": "transição hblur entre as cenas",
+   "parametro": "montar_locucao(transicao=\"hblur\")",
+   "previa": {
+    "motor": "xfade",
+    "args": {
+     "tipo": "hblur"
+    }
+   }
+  },
+  {
+   "id": "palavras-chave",
+   "categoria": "elemento",
+   "nome": "Palavra-chave na tela",
+   "descricao": "A palavra que importa aparece numa pílula laranja animada, junto com a fala.",
+   "temas": [
+    "tutorial",
+    "lista",
+    "dica",
+    "energia"
+   ],
+   "como_pedir": "palavras-chave na tela",
+   "parametro": "palavras_chave=\"auto\"",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "palavras_chave": [
+      {
+       "texto": "webcam",
+       "inicio": 1.0,
+       "fim": 2.2
+      },
+      {
+       "texto": "C922",
+       "inicio": 3.8,
+       "fim": 5.0
+      }
+     ]
+    }
+   }
+  },
+  {
+   "id": "capitulos",
+   "categoria": "elemento",
+   "nome": "Capítulos numerados",
+   "descricao": "Pílula “1/2 · Webcam” no alto quando muda o assunto. Organiza listas e passo a passo.",
+   "temas": [
+    "lista",
+    "tutorial",
+    "aula"
+   ],
+   "como_pedir": "capítulos numerados",
+   "parametro": "capitulos=\"Item@0; Item@12\"",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "capitulos": "Webcam@0; Aplicativo@4.4"
+    }
+   }
+  },
+  {
+   "id": "barra-progresso",
+   "categoria": "elemento",
+   "nome": "Barra de progresso",
+   "descricao": "Linha laranja na base que enche até o fim. Segura quem está quase saindo.",
+   "temas": [
+    "lista",
+    "tutorial",
+    "energia"
+   ],
+   "como_pedir": "barra de progresso",
+   "parametro": "barra_progresso=True",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "barra_progresso": true
+    }
+   }
+  },
+  {
+   "id": "terco-inferior",
+   "categoria": "elemento",
+   "nome": "Terço inferior",
+   "descricao": "Nome e cargo entram pela lateral no começo do vídeo.",
+   "temas": [
+    "tutorial",
+    "depoimento",
+    "entrevista",
+    "youtube"
+   ],
+   "como_pedir": "terço inferior com o nome",
+   "parametro": "terco_texto, terco_sub",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "terco_texto": "Thiago Gomes",
+     "terco_sub": "Grava Simples · OBS",
+     "terco_inicio_s": 0.4,
+     "terco_s": 4.5
+    }
+   }
+  },
+  {
+   "id": "broll-janela",
+   "categoria": "elemento",
+   "nome": "B-roll em janela",
+   "descricao": "Um print ou trecho de tela entra numa janela de cantos arredondados enquanto a fala segue.",
+   "temas": [
+    "tutorial",
+    "dica"
+   ],
+   "como_pedir": "b-roll em janela",
+   "parametro": "broll=\"arquivo@inicio@duração@janela\" ou \"auto\"",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "broll": "estilos/previas/broll_obs.jpg@1.5@3@janela"
+    }
+   }
+  },
+  {
+   "id": "broll-cheio",
+   "categoria": "elemento",
+   "nome": "B-roll em tela cheia",
+   "descricao": "O material cobre a tela toda por alguns segundos, com zoom lento.",
+   "temas": [
+    "tutorial",
+    "historia",
+    "bastidor"
+   ],
+   "como_pedir": "b-roll em tela cheia",
+   "parametro": "broll=\"arquivo@inicio@duração@cheio\"",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "broll": "estilos/previas/broll_obs.jpg@1.5@3@cheio"
+    }
+   }
+  },
+  {
+   "id": "tela-final",
+   "categoria": "elemento",
+   "nome": "Tela final com CTA",
+   "descricao": "3 s de encerramento com título, destaque laranja e convite (seguir, salvar).",
+   "temas": [
+    "tutorial",
+    "dica",
+    "lista",
+    "opiniao"
+   ],
+   "como_pedir": "tela final com CTA",
+   "parametro": "tela_final=True",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "tela_final": true
+    }
+   }
+  },
+  {
+   "id": "sfx",
+   "categoria": "elemento",
+   "nome": "Efeitos sonoros",
+   "descricao": "Whoosh no corte, pop na palavra-chave e ding no fim, baixinhos. Ligue o som da prévia.",
+   "temas": [
+    "energia",
+    "lista",
+    "anuncio"
+   ],
+   "como_pedir": "efeitos sonoros discretos",
+   "parametro": "sfx=True",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "sfx": true,
+     "clarao": true,
+     "cortes": [
+      2.2,
+      4.6
+     ],
+     "palavras_chave": [
+      {
+       "texto": "webcam",
+       "inicio": 1.0,
+       "fim": 2.2
+      }
+     ],
+     "tela_final": true
+    }
+   }
+  },
+  {
+   "id": "pip",
+   "categoria": "formato",
+   "nome": "Rosto em bolha (PiP)",
+   "descricao": "A tela do OBS cheia e o rosto numa bolha com borda laranja. Para “olha a tela”.",
+   "temas": [
+    "tutorial",
+    "tela"
+   ],
+   "como_pedir": "formato PiP com o rosto em bolha",
+   "parametro": "montar_pip",
+   "previa": {
+    "motor": "pip",
+    "args": {}
+   }
+  },
+  {
+   "id": "antes-depois",
+   "categoria": "formato",
+   "nome": "Antes e depois",
+   "descricao": "Dois vídeos no mesmo quadro com rótulos ANTES e DEPOIS. Luz, áudio, cenário.",
+   "temas": [
+    "antes-depois",
+    "dica",
+    "anuncio"
+   ],
+   "como_pedir": "formato antes e depois",
+   "parametro": "montar_antes_depois",
+   "previa": {
+    "motor": "antes_depois",
+    "args": {}
+   }
+  },
+  {
+   "id": "dividido",
+   "categoria": "formato",
+   "nome": "Tela dividida",
+   "descricao": "Rosto em cima e tela embaixo, com o mesmo peso. Tutorial falado.",
+   "temas": [
+    "tutorial",
+    "aula"
+   ],
+   "como_pedir": "tela dividida rosto + tela",
+   "parametro": "montar_dividido",
+   "previa": {
+    "motor": "dividido",
+    "args": {}
+   }
+  },
+  {
+   "id": "react",
+   "categoria": "formato",
+   "nome": "React a uma referência",
+   "descricao": "A referência em cima e você embaixo, com o crédito na tela o tempo todo. Só com vídeo próprio, autorizado ou licenciado.",
+   "temas": [
+    "opiniao",
+    "novidade",
+    "tela"
+   ],
+   "como_pedir": "formato react (direitos e crédito da referência)",
+   "parametro": "montar_react",
+   "previa": {
+    "motor": "react",
+    "args": {}
+   }
+  },
+  {
+   "id": "carrossel-video",
+   "categoria": "formato",
+   "nome": "Carrossel em vídeo",
+   "descricao": "Os slides de um carrossel viram um Reel: zoom leve em cada um e transição entre eles.",
+   "temas": [
+    "lista",
+    "dica",
+    "novidade"
+   ],
+   "como_pedir": "carrossel em vídeo a partir dos slides",
+   "parametro": "animar_carrossel(slides, saida, formato=\"9x16\", transicao)",
+   "previa": {
+    "motor": "carrossel",
+    "args": {}
+   }
+  },
+  {
+   "id": "capitulos-auto",
+   "categoria": "elemento",
+   "nome": "Capítulos da fala",
+   "descricao": "Quando a fala diz “primeiro… segundo…” ou “passo 1, passo 2”, os capítulos entram sozinhos com o nome de cada item.",
+   "temas": [
+    "lista",
+    "tutorial",
+    "aula"
+   ],
+   "como_pedir": "capítulos automáticos da fala",
+   "parametro": "capitulos=\"auto\"",
+   "previa": {
+    "motor": "remotion",
+    "args": {
+     "capitulos": "Primeiro passo@0; Segundo passo@3.4"
+    }
+   }
+  }
+ ]
+}

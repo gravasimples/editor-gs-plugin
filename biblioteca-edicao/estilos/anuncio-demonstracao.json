@@ -1,0 +1,62 @@
+{
+ "id": "anuncio-demonstracao",
+ "ordem": 8,
+ "nome": "Anúncio com demonstração",
+ "energia": "bem_dinamico",
+ "base_estilo": "profissional",
+ "legenda": "cinetica-tipografica",
+ "resumo": "9:16 de 30 a 50 s: gancho em 3 s, demonstração real no OBS, produto recortado quando citado e CTA claro.",
+ "formatos": [
+  "anuncio"
+ ],
+ "temas": [
+  "anuncio",
+  "gancho"
+ ],
+ "grafismos": {
+  "tipos": [
+   "manchete",
+   "pilula",
+   "logos",
+   "recorte",
+   "cta"
+  ],
+  "a_cada_s": 6,
+  "visual": [
+   "card"
+  ]
+ },
+ "transicoes": {
+  "seco": 0.45,
+  "punch": 0.4,
+  "zoom_blur": 0.1,
+  "deslize": 0.05
+ },
+ "alvos": {
+  "duracao_s": 45,
+  "pausa_max_s": 0.3
+ },
+ "estrutura": [
+  "0–3 s: situação reconhecível em card com etiqueta",
+  "3–30 s: POV da mesa e da tela, recurso funcionando",
+  "equipamento citado entra recortado",
+  "últimos 5 s: CTA claro em um botão"
+ ],
+ "regras": [
+  "Benefício antes do termo técnico",
+  "Produto recortado só quando é dito",
+  "Um CTA só, no fim"
+ ],
+ "evitar": [
+  "preço ou escassez no corte orgânico",
+  "tour do setup sem motivo",
+  "três ou mais gráficos colados"
+ ],
+ "prompt": "Anúncio 9:16 de 30 a 50 s: gancho de 3 s em card com etiqueta, depois mesa e tela mostrando o recurso funcionando, equipamento citado entra recortado sem fundo, punch nas ênfases e um único CTA no fim. Sem preço no corte orgânico.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

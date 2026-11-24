@@ -1,0 +1,54 @@
+{
+ "id": "antes-depois",
+ "ordem": 10,
+ "nome": "Antes e depois",
+ "energia": "dinamico",
+ "base_estilo": "profissional",
+ "legenda": "karaoke-pop",
+ "resumo": "O jeito ruim de propósito (som de microfone ruim, imagem pixelada) e a virada para o resultado bom.",
+ "formatos": [
+  "fala_tela",
+  "anuncio"
+ ],
+ "temas": [
+  "antes-depois",
+  "tutorial"
+ ],
+ "grafismos": {
+  "tipos": [
+   "riscado",
+   "cartoes",
+   "numero"
+  ],
+  "a_cada_s": 8,
+  "visual": [
+   "neon"
+  ]
+ },
+ "transicoes": {
+  "seco": 0.5,
+  "flash": 0.2,
+  "punch": 0.3
+ },
+ "estrutura": [
+  "antes: trecho com efeito_no_trecho (mic_ruim, webcam_ruim ou pixelado)",
+  "virada: flash no corte para o depois",
+  "depois: o mesmo trecho limpo e cartões comparando"
+ ],
+ "regras": [
+  "Cena ruim só no trecho do antes, até 8 s",
+  "Flash só na virada",
+  "Número da melhora em neon quando dito"
+ ],
+ "evitar": [
+  "deixar a cena ruim longa",
+  "comparar sem mostrar o mesmo enquadramento"
+ ],
+ "prompt": "Antes e depois: deixe o trecho do antes ruim de propósito (efeito_no_trecho com microfone ruim ou webcam ruim, até 8 s), vire com um flash no corte e mostre o depois limpo, com cartões comparando. Número da melhora em neon quando eu disser.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

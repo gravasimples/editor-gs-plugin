@@ -1,0 +1,26 @@
+{
+ "id": "amarelo-creator",
+ "nome": "Amarelo creator (fora da marca)",
+ "descricao": "Karaokê amarelo com contorno preto grosso, estilo creator clássico. Só para cliente ou teste: não é a paleta da Grava Simples.",
+ "temas": [
+  "cliente",
+  "energia"
+ ],
+ "fora_da_marca": true,
+ "ordem": 13,
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Poppins",
+  "peso": "Bold",
+  "tamanho_9x16": 80,
+  "tamanho_16x9": 60,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#FFD400",
+  "contorno": "#000000",
+  "posicao": "centro",
+  "palavras_por_linha_max": 3,
+  "maiusculas": true,
+  "animacao": "pop",
+  "contorno_px": 8
+ }
+}
