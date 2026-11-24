@@ -1,0 +1,47 @@
+{
+ "id": "react-com-direitos",
+ "ordem": 16,
+ "nome": "React comentado",
+ "energia": "dinamico",
+ "base_estilo": "padrao",
+ "legenda": "karaoke-classico",
+ "resumo": "Reação a vídeo de terceiro (só com direitos): vídeo em janela, pausas para comentar e checklist do aprendizado.",
+ "formatos": [
+  "react"
+ ],
+ "temas": [
+  "opiniao",
+  "tutorial"
+ ],
+ "grafismos": {
+  "tipos": [
+   "pilula",
+   "checklist"
+  ],
+  "a_cada_s": 8
+ },
+ "transicoes": {
+  "seco": 1.0
+ },
+ "estrutura": [
+  "mostra o trecho do outro em janela",
+  "pausa e comenta com o rosto em destaque",
+  "checklist do que aprender"
+ ],
+ "regras": [
+  "Só com direito de uso registrado",
+  "Trecho do outro curto, o comentário é o principal",
+  "Crédito ao autor como o direito pedir"
+ ],
+ "evitar": [
+  "usar sem direito",
+  "deixar o trecho alheio maior que o comentário"
+ ],
+ "prompt": "React comentado, só com direito de uso: o vídeo do outro em janela em trechos curtos, pausa para eu comentar com o rosto em destaque e checklist do aprendizado no fim. Meu comentário ocupa mais tempo que o trecho.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

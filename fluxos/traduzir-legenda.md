@@ -1,0 +1,14 @@
+# Fluxo: traduzir-legenda
+
+Legenda traduzida (inglês, espanhol ou o idioma que o pedido disser) para um vídeo já pronto ou bruto, sem cortar nada: o Editor traduz o SRT, a ferramenta `legenda_de_srt` monta o ASS no estilo da marca e o vídeo sai com a legenda queimada mais o SRT traduzido separado (para o YouTube/Instagram aceitarem como faixa).
+
+Passos para o Editor (ferramentas do MCP editor-de-video):
+1. Idioma de destino: o que o pedido disser; se não disser, inglês. Código curto para os nomes de arquivo: `en`, `es`, etc.
+2. Origem da fala: se o pedido aponta uma entrega anterior (`saida/<slug-anterior>/`), reaproveite `legenda.srt` ou `palavras.json` de lá (é a fala já cortada, no mesmo tempo do `final_9x16.mp4`). Senão, `info` + `transcrever` do vídeo anexado com `saida_srt` (idioma `pt`). Nunca corte o vídeo neste fluxo.
+3. Traduzir você mesmo o SRT para `saida/<slug>/legenda-<idioma>.srt`, mantendo índice e tempos de cada bloco. Regras: uma ideia por bloco; até 2 linhas e ~22 caracteres por linha no 9:16 (38 no 16:9), senão divida o bloco repartindo o tempo; frases curtas na voz do Thiago (direto, sem floreio); nomes de recurso do OBS pelo nome da interface no idioma de destino (em inglês: Scenes, Sources, Audio Mixer, Settings, Studio Mode, Virtual Camera); não traduzir marca, "OBS" nem "Grava Simples"; marque com `*asteriscos*` uma palavra-chave por bloco quando fizer sentido (vira o destaque laranja). Sem preço, oferta ou número de alunos.
+4. `legenda_de_srt(srt=saida/<slug>/legenda-<idioma>.srt, saida_ass=saida/<slug>/legenda-<idioma>.ass, estilo, formato=9x16)`. Se `blocos_longos` > 0, divida esses blocos no SRT e rode de novo. Também 16x9 quando o pedido pedir os dois formatos.
+5. `montar(video, saida/<slug>/final_9x16_<idioma>.mp4, formato=9x16, legenda_ass=...)` sobre o vídeo pronto (ou o bruto sem cortes). Se o vídeo-base já tem legenda queimada em português, avise no relatório: o ideal é partir do vídeo sem legenda (`cortado.mp4` da entrega anterior, quando existir).
+6. Na mensagem final, no idioma de destino: `## Legenda do post` (curta, sem preço/oferta/alunos, CTA de seguir), `## Hashtags` (5 a 8, misturando as da marca e as do idioma), `## Título (YouTube)` (até 60 caracteres), `## Gancho`. Sem `post.md`.
+7. `## Resumo`: idioma, número de blocos, termos mantidos sem tradução, blocos divididos; `## Pendências`: dúvidas de tradução marcadas `[CONFERIR]` (gíria, trocadilho, nome de produto); `## Arquivos`: `final_9x16_<idioma>.mp4`, `legenda-<idioma>.srt`, `legenda-<idioma>.ass`. Sem `relatorio.md`. Não publicar.
+
+Tradução barata: use `traduzir_srt(srt_original, saida/<slug>/legenda-<idioma>.srt, idioma, contexto="tema do vídeo")` (Gemini) em vez de traduzir você mesmo; depois leia o SRT, corrija termos de OBS/menus e marque `[CONFERIR]` nas pendências. Só traduza à mão se a ferramenta devolver erro.

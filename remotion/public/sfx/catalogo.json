@@ -1,0 +1,40 @@
+{
+ "whoosh": [
+  "whoosh-01.wav",
+  "whoosh-02.wav",
+  "whoosh-03.wav",
+  "whoosh-04.wav"
+ ],
+ "pop": [
+  "pop-01.wav",
+  "pop-02.wav",
+  "pop-03.wav"
+ ],
+ "ding": [
+  "ding-01.wav",
+  "ding-02.wav"
+ ],
+ "riser": [
+  "riser-01.wav",
+  "riser-02.wav",
+  "riser-03.wav"
+ ],
+ "impacto": [
+  "impacto-01.wav",
+  "impacto-02.wav"
+ ],
+ "swipe": [
+  "swipe-01.wav",
+  "swipe-02.wav",
+  "swipe-03.wav"
+ ],
+ "tick": [
+  "tick-01.wav",
+  "tick-02.wav",
+  "tick-03.wav"
+ ],
+ "erro": [
+  "erro-01.wav",
+  "erro-02.wav"
+ ]
+}

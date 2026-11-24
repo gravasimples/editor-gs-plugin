@@ -1,0 +1,50 @@
+{
+ "id": "cliente-fora-da-marca",
+ "ordem": 18,
+ "nome": "Vídeo de cliente fora da marca",
+ "energia": "dinamico",
+ "base_estilo": "padrao",
+ "legenda": "amarelo-creator",
+ "resumo": "Mesma gramática de corte do profissional com a paleta e a fonte do cliente, sem marinho e laranja.",
+ "formatos": [
+  "fala",
+  "fala_tela",
+  "anuncio"
+ ],
+ "temas": [
+  "cliente"
+ ],
+ "grafismos": {
+  "tipos": [
+   "pilula",
+   "manchete",
+   "cta"
+  ],
+  "a_cada_s": 8
+ },
+ "transicoes": {
+  "seco": 0.7,
+  "punch": 0.3
+ },
+ "estrutura": [
+  "pedir paleta e fonte do cliente antes",
+  "corte e grafismos como no profissional",
+  "CTA do cliente, não o nosso"
+ ],
+ "regras": [
+  "Estilo inline com as cores do cliente",
+  "Dizer no Resumo que saiu da paleta",
+  "Logo do cliente só com arquivo dele"
+ ],
+ "evitar": [
+  "marinho e laranja da Grava Simples",
+  "CTA da Grava Simples"
+ ],
+ "prompt": "Vídeo de cliente: mesma gramática de corte do nível profissional, mas com estilo inline nas cores e fonte do cliente (sem marinho e laranja), logo só com o arquivo dele e o CTA dele no fim. Diga no Resumo que saiu da paleta.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

@@ -1,0 +1,53 @@
+{
+ "id": "entrevista-varias-pessoas",
+ "ordem": 15,
+ "nome": "Entrevista com várias pessoas",
+ "energia": "bem_dinamico",
+ "base_estilo": "profissional",
+ "legenda": "caixa-marinho",
+ "resumo": "Várias respostas curtas para a mesma pergunta, troca rápida de pessoa e a pergunta fixa no topo.",
+ "formatos": [
+  "fala",
+  "anuncio"
+ ],
+ "temas": [
+  "entrevista",
+  "depoimento"
+ ],
+ "grafismos": {
+  "tipos": [
+   "kicker",
+   "pilula",
+   "cta"
+  ],
+  "a_cada_s": 6,
+  "visual": [
+   "banner"
+  ]
+ },
+ "transicoes": {
+  "seco": 0.6,
+  "punch": 0.4
+ },
+ "estrutura": [
+  "0–2 s: a pergunta em banner",
+  "respostas de 3 a 6 s, uma pessoa por vez",
+  "fecho com a resposta mais forte e CTA"
+ ],
+ "regras": [
+  "Kicker com o primeiro nome de cada pessoa, se autorizado",
+  "Punch na troca de pessoa",
+  "Só gente com direito de imagem"
+ ],
+ "evitar": [
+  "resposta longa",
+  "nome completo sem autorização"
+ ],
+ "prompt": "Entrevista com várias pessoas: a pergunta fica num banner no topo, respostas de 3 a 6 s com punch na troca de pessoa, kicker com o primeiro nome quando autorizado e fecho na resposta mais forte com CTA.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

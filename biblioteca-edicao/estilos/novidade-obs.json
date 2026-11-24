@@ -1,0 +1,56 @@
+{
+ "id": "novidade-obs",
+ "ordem": 11,
+ "nome": "Novidade do OBS",
+ "energia": "dinamico",
+ "base_estilo": "profissional",
+ "legenda": "display-unbounded",
+ "resumo": "Recurso novo ou atualização: faixa de banner no topo, logo real, fluxo de onde clicar e demonstração.",
+ "formatos": [
+  "fala_tela"
+ ],
+ "temas": [
+  "novidade",
+  "tela",
+  "tutorial"
+ ],
+ "grafismos": {
+  "tipos": [
+   "kicker",
+   "logos",
+   "fluxo",
+   "pilula"
+  ],
+  "a_cada_s": 7,
+  "visual": [
+   "banner"
+  ]
+ },
+ "transicoes": {
+  "seco": 0.6,
+  "deslize": 0.3,
+  "punch": 0.1
+ },
+ "estrutura": [
+  "0–3 s: banner com o nome da novidade",
+  "onde fica: fluxo de cliques na tela",
+  "funcionando: zoom na área ativa",
+  "para quem serve, em uma frase"
+ ],
+ "regras": [
+  "Logo real do app, nunca redesenhado",
+  "Fluxo só com os cliques ditos",
+  "Conferir se o recurso existe na versão citada"
+ ],
+ "evitar": [
+  "prometer recurso que não existe",
+  "banner em cima do rosto"
+ ],
+ "prompt": "Novidade do OBS: banner no topo com o nome do recurso, logo real do app, fluxo com os cliques que eu disser e o recurso funcionando com zoom na área ativa. Feche dizendo para quem serve em uma frase.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

@@ -1,0 +1,26 @@
+{
+ "id": "karaoke-classico",
+ "nome": "Karaokê clássico",
+ "descricao": "Acende a palavra falada, sem animação, na parte de baixo. Discreta e legível: o padrão da marca.",
+ "temas": [
+  "tutorial",
+  "aula",
+  "dica"
+ ],
+ "fora_da_marca": false,
+ "ordem": 2,
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 72,
+  "tamanho_16x9": 54,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 4,
+  "maiusculas": false,
+  "animacao": "nenhuma"
+ }
+}

@@ -1,0 +1,46 @@
+{
+ "nome": "padrao",
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 72,
+  "tamanho_16x9": 54,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 4,
+  "maiusculas": false,
+  "animacao": "nenhuma"
+ },
+ "montagem": {
+  "ritmo": "normal",
+  "corte_inteligente": true,
+  "silencio_min_s": 0.3,
+  "silencio_limiar_db": -35,
+  "margem_corte_s": 0.08,
+  "zoom_por_frase": false,
+  "clarao_transicao": false,
+  "tela_final_cta": false,
+  "nivel": 1
+ },
+ "saida": {
+  "formatos": [
+   "9x16",
+   "16x9"
+  ],
+  "resolucao": "1080p",
+  "fps": 30,
+  "codec": "libx264",
+  "crf": 20,
+  "audio_kbps": 160
+ },
+ "descricao": "Limpo, na marca: karaokê embaixo, sem efeitos. O ponto de partida seguro.",
+ "temas": [
+  "tutorial",
+  "aula",
+  "dica"
+ ],
+ "casa": true
+}

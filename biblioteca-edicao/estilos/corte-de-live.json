@@ -1,0 +1,54 @@
+{
+ "id": "corte-de-live",
+ "ordem": 13,
+ "nome": "Corte de live ou aula para Reels",
+ "energia": "dinamico",
+ "base_estilo": "profissional",
+ "legenda": "karaoke-pop",
+ "resumo": "Trecho de vídeo longo que se sustenta sozinho: começa na frase certa, gancho escrito e fim no quadro calmo.",
+ "formatos": [
+  "fala",
+  "fala_tela"
+ ],
+ "temas": [
+  "dica",
+  "youtube",
+  "gancho"
+ ],
+ "grafismos": {
+  "tipos": [
+   "manchete",
+   "pilula",
+   "cta"
+  ],
+  "a_cada_s": 8
+ },
+ "transicoes": {
+  "seco": 0.7,
+  "punch": 0.3
+ },
+ "montagem": {
+  "gancho_animacao": "palavra"
+ },
+ "estrutura": [
+  "0–2 s: gancho escrito palavra por palavra com a ideia do trecho",
+  "o trecho inteiro, começando e terminando em frase",
+  "fim no quadro calmo e CTA"
+ ],
+ "regras": [
+  "Rodar conferir_cortes_longos e usar nota acima de 80",
+  "Não começar com conectivo",
+  "Tirar referência ao resto da live"
+ ],
+ "evitar": [
+  "começar no meio de uma ideia",
+  "citar algo de antes do corte"
+ ],
+ "prompt": "Corte de live para Reels: escolha um trecho que se sustenta sozinho (nota acima de 80 no conferir_cortes_longos), comece e termine em frase completa, gancho escrito palavra por palavra nos 2 primeiros segundos e fim no quadro calmo com CTA.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

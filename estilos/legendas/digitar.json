@@ -1,0 +1,25 @@
+{
+ "id": "digitar",
+ "nome": "Digitando",
+ "descricao": "Cada palavra aparece na hora em que é falada, como se estivesse sendo escrita. Prende a leitura em histórias.",
+ "temas": [
+  "historia",
+  "bastidor"
+ ],
+ "fora_da_marca": false,
+ "ordem": 5,
+ "legenda": {
+  "modo": "linha",
+  "fonte": "Inter",
+  "peso": "Bold",
+  "tamanho_9x16": 64,
+  "tamanho_16x9": 48,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 4,
+  "maiusculas": false,
+  "animacao": "digitar"
+ }
+}

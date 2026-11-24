@@ -1,0 +1,52 @@
+{
+ "id": "depoimento-pilula",
+ "ordem": 9,
+ "nome": "Depoimento em pílulas",
+ "energia": "dinamico",
+ "base_estilo": "profissional",
+ "legenda": "cinetica-pilula",
+ "resumo": "Fala de aluno ou cliente com legenda em pílula por bloco, nome no kicker e corte só nas repetições.",
+ "formatos": [
+  "fala",
+  "anuncio"
+ ],
+ "temas": [
+  "depoimento",
+  "entrevista"
+ ],
+ "grafismos": {
+  "tipos": [
+   "kicker",
+   "pilula",
+   "cta"
+  ],
+  "a_cada_s": 12
+ },
+ "transicoes": {
+  "seco": 0.85,
+  "punch": 0.15
+ },
+ "estrutura": [
+  "abre na frase mais forte do depoimento",
+  "kicker com nome e contexto",
+  "o antes e o depois na fala da pessoa",
+  "CTA curto"
+ ],
+ "regras": [
+  "Só depoimento com direito de uso",
+  "Não cortar a frase da pessoa no meio",
+  "Destaque só nas palavras de resultado"
+ ],
+ "evitar": [
+  "inventar resultado",
+  "efeito sonoro em cima da fala",
+  "música alta"
+ ],
+ "prompt": "Depoimento com legenda em pílula por bloco: abra na frase mais forte, nome e contexto num kicker, corte só repetições e pausas longas, sem cortar a frase da pessoa. Destaque nas palavras de resultado e CTA curto no fim.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

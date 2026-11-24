@@ -1,0 +1,60 @@
+{
+ "id": "aula-longa-youtube",
+ "ordem": 12,
+ "nome": "Aula longa para YouTube",
+ "energia": "calmo",
+ "base_estilo": "tutorial",
+ "legenda": "youtube-compacta",
+ "resumo": "Aula horizontal de vários minutos: tela com rosto, capítulos, cortes só de erro e pausa longa.",
+ "formatos": [
+  "aula"
+ ],
+ "temas": [
+  "aula",
+  "youtube",
+  "tutorial"
+ ],
+ "grafismos": {
+  "tipos": [
+   "cartoes",
+   "checklist",
+   "fluxo"
+  ],
+  "a_cada_s": 60
+ },
+ "transicoes": {
+  "seco": 0.9,
+  "deslize": 0.1
+ },
+ "montagem": {
+  "capitulos": "auto",
+  "sfx": false
+ },
+ "alvos": {
+  "pausa_max_s": 0.9,
+  "cortes_por_min": 1
+ },
+ "estrutura": [
+  "abertura: o que a pessoa vai conseguir fazer no fim",
+  "capítulos por assunto, com cartão de título",
+  "resumo em checklist",
+  "próximo passo"
+ ],
+ "regras": [
+  "Corte só erro, repetição e pausa acima de 0,9 s",
+  "Rosto em caixa sem cobrir menu",
+  "Capítulos pelo assunto da fala"
+ ],
+ "evitar": [
+  "ritmo de Reels",
+  "efeito sonoro",
+  "gráfico a cada frase"
+ ],
+ "prompt": "Aula longa horizontal: tela com rosto em caixa, capítulos automáticos pelo assunto, cortes só de erro, repetição e pausa acima de 0,9 s. Um cartão por capítulo e checklist de resumo no fim; nada de ritmo de Reels.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

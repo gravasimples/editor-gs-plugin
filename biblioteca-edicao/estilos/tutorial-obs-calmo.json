@@ -1,0 +1,57 @@
+{
+ "id": "tutorial-obs-calmo",
+ "ordem": 2,
+ "nome": "Tutorial de OBS que respira",
+ "energia": "calmo",
+ "base_estilo": "tutorial",
+ "legenda": "alta-tutorial",
+ "resumo": "Passo a passo para iniciante: tela grande, legenda no alto, zoom guiando o olho e quase nenhum efeito.",
+ "formatos": [
+  "fala_tela",
+  "aula"
+ ],
+ "temas": [
+  "tutorial",
+  "tela",
+  "aula"
+ ],
+ "grafismos": {
+  "tipos": [
+   "kicker",
+   "checklist",
+   "pilula"
+  ],
+  "a_cada_s": 10
+ },
+ "transicoes": {
+  "seco": 0.85,
+  "deslize": 0.15
+ },
+ "montagem": {
+  "sfx": false,
+  "clarao_transicao": false
+ },
+ "estrutura": [
+  "abertura: o que vai funcionar no fim, mostrado em 2 s",
+  "cada passo: kicker com o número do passo e zoom no clique",
+  "fim: checklist do que foi feito"
+ ],
+ "regras": [
+  "Uma ação por vez na tela, com zoom suave até 1,7x",
+  "Legenda no alto para não cobrir menu",
+  "Pausa de até 0,5 s depois de um clique importante",
+  "Kicker numerado em cada passo"
+ ],
+ "evitar": [
+  "efeito sonoro",
+  "punch e tremor",
+  "cortar a fala no meio de uma instrução"
+ ],
+ "prompt": "Tutorial calmo para quem nunca abriu o OBS: legenda no alto, zoom suave em cada clique, kicker com o número do passo e checklist no fim. Sem efeitos sonoros nem transições chamativas; deixe respirar meio segundo depois de cada clique importante.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

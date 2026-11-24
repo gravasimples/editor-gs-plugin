@@ -1,0 +1,29 @@
+{
+ "id": "cinetica-pilula",
+ "nome": "Pílula por bloco",
+ "descricao": "Cada bloco de 2 a 4 palavras entra numa pílula laranja arredondada com um pop; as palavras acendem quando são faladas e a de ênfase dá um pulo curto. Visto nos depoimentos editados pelo Máquina. Desenhada pelo Remotion, sem arquivo ASS.",
+ "temas": [
+  "depoimento",
+  "entrevista",
+  "dica",
+  "energia"
+ ],
+ "fora_da_marca": false,
+ "ordem": 17,
+ "motor": "remotion",
+ "legenda": {
+  "modo": "karaoke",
+  "fonte": "Inter",
+  "peso": "ExtraBold",
+  "tamanho_9x16": 60,
+  "tamanho_16x9": 46,
+  "cor_texto": "#000921",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 4,
+  "maiusculas": true,
+  "animacao": "pilula",
+  "tremor": false
+ }
+}

@@ -1,0 +1,65 @@
+{
+ "id": "fala-tela-reels",
+ "ordem": 1,
+ "nome": "Fala + tela no ritmo de Reels",
+ "energia": "dinamico",
+ "base_estilo": "profissional",
+ "legenda": "karaoke-pop",
+ "resumo": "Fala para a câmera intercalada com a tela do OBS, cortes que não deixam respirar demais e um gráfico por ideia.",
+ "formatos": [
+  "fala_tela"
+ ],
+ "temas": [
+  "tutorial",
+  "dica",
+  "tela"
+ ],
+ "grafismos": {
+  "tipos": [
+   "pilula",
+   "cartoes",
+   "kicker",
+   "manchete",
+   "cta"
+  ],
+  "a_cada_s": 5,
+  "visual": [
+   "card"
+  ]
+ },
+ "transicoes": {
+  "seco": 0.5,
+  "punch": 0.25,
+  "deslize": 0.2,
+  "zoom_blur": 0.05
+ },
+ "alvos": {
+  "pausa_max_s": 0.31,
+  "palavras_por_s": 3.85,
+  "tela_cheia_por_video": 2
+ },
+ "estrutura": [
+  "0–3 s: a dor ou o resultado dito de frente, rosto em plano fechado",
+  "3–8 s: corta para a tela mostrando onde fica",
+  "meio: alterna rosto e tela a cada ideia, com zoom na área ativa",
+  "fim: resultado na tela e CTA curto"
+ ],
+ "regras": [
+  "Tela só quando a fala cita o que aparece nela",
+  "Zoom na área ativa da tela, nunca no canto vazio",
+  "Um gráfico por ideia; termo técnico vira pílula",
+  "Troca de assunto pede deslize ou punch; dentro da ideia, seco"
+ ],
+ "evitar": [
+  "gráfico repetindo a legenda",
+  "transição forte no meio de uma frase",
+  "legenda cobrindo o menu do OBS"
+ ],
+ "prompt": "Edite no ritmo de Reels alternando rosto e tela do OBS: corte as pausas acima de 0,3 s, leve para a tela sempre que eu citar algo que aparece nela, com zoom na área que mexe. Um gráfico por ideia (pílula para termo técnico, cartões para comparação), seco dentro da ideia e deslize ou punch na troca de assunto. Feche com o resultado na tela e CTA curto.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

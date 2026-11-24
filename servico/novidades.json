@@ -1,0 +1,513 @@
+[
+ {
+  "id": "app-visual-fase2",
+  "data": "2026-11-17",
+  "area": "App",
+  "titulo": "App mais limpo: Início com \"continuar de onde parou\", Biblioteca e Aprovações em cartões",
+  "o_que_e": "Design, fase 2. O Início ganhou a faixa \"Continuar de onde parou\": decisões que esperam você, pedidos em andamento e as últimas entregas prontas para aprovar, com prévia e status; embaixo, quantos recursos o Laboratório tem para testar e quantas propostas de receitas esperam (o link abre direto em Estilos › Receitas › Propostas). Biblioteca e Aprovações viraram cartões com prévia (capa ou o primeiro quadro do vídeo, que toca mudo ao passar o mouse; sem mídia, ícone e cor do tipo), filtros simples e a ação principal no próprio cartão: Baixar na Biblioteca; Aprovar e Pedir ajuste nas Aprovações, sem abrir a conversa (decisões com Aprovar e Recusar). Todas as páginas principais mostram um esqueleto enquanto carregam, uma mensagem útil quando estão vazias e \"Tentar de novo\" quando dá erro.",
+  "como_testar": [
+   "Abrir o Início: conferir a faixa \"Continuar de onde parou\" (decisão primeiro, depois em andamento e entregas) e os dois atalhos de Laboratório e propostas de receitas",
+   "Tocar em \"propostas de receitas\": deve abrir Estilos › Receitas já rolado até Propostas",
+   "Na Biblioteca, passar o mouse numa prévia (o vídeo toca mudo), usar os filtros de uso e de tipo, tocar na prévia para abrir a gaveta com todos os arquivos e testar Baixar",
+   "Em Aprovações, tocar na prévia para assistir, usar Pedir ajuste com \"marcar o segundo\" e Aprovar uma entrega (o cartão some com \"Aprovada ✓\"); marcar duas e usar a barra de lote embaixo",
+   "No celular, abrir as mesmas três páginas: os filtros rolam de lado e os cartões ficam em duas colunas",
+   "Desligar a internet (ou o gateway) e abrir uma página: deve aparecer \"Não deu para carregar\" com \"Tentar de novo\""
+  ],
+  "onde": "/",
+  "midia": [
+   "inicio.png",
+   "aprovacoes.png",
+   "biblioteca.png",
+   "inicio-cel.png"
+  ]
+ },
+ {
+  "id": "historia-grade",
+  "data": "2026-11-16",
+  "area": "Edição",
+  "titulo": "Cartão de história e grade em cascata",
+  "o_que_e": "Item 7 da lista \"O que o Máquina faz e nós não\". Dois grafismos novos de tela: o cartão de história, um cartão grande que abre subindo como um story, com as barrinhas de progresso no alto, título com a palavra em laranja e uma frase de apoio; ele pode ter até 4 páginas que trocam na palavra dita e sai deslizando de lado. E a grade em cascata: vários cartões quadrados com ícone e nome entrando um atrás do outro (cada um na hora em que é citado), com o último em laranja. Os dois usam os ícones 3D novos. Em cima deles não entra tremor de câmera, porque é texto para ler.",
+  "como_testar": [
+   "Dar play no vídeo: 12 s do óbvio 02 (computador, webcam e microfone)",
+   "Cada cartão da grade (Computador, Webcam, Microfone, USB) deve entrar quando o Thiago fala dele",
+   "Depois entra o cartão de história \"Sem estúdio\" e troca para \"Já dá pra fazer sua live\" no \"live\"; no fim ele sai deslizando",
+   "Conferir se dá tempo de ler cada página e se a grade não cobre demais o rosto",
+   "Num pedido real, pedir por exemplo: \"faz um cartão de story com a lição do vídeo\" ou \"mostra tudo o que vem no kit numa grade\""
+  ],
+  "onde": "/",
+  "midia": [
+   "historia-grade.mp4"
+  ]
+ },
+ {
+  "id": "celular-comentario",
+  "data": "2026-11-16",
+  "area": "Edição",
+  "titulo": "Celular com conversa digitando e cartão de comentário",
+  "o_que_e": "Item 3 da lista \"O que o Máquina faz e nós não\". Dois grafismos novos: um celular desenhado pelo próprio Editor (sem logo nem cor de nenhum app real) com as mensagens entrando uma a uma, com os três pontinhos de \"digitando\" antes de cada resposta; e um cartão de comentário ou avaliação com avatar genérico (a inicial num círculo), nome, estrelas acendendo uma a uma e o texto. O texto das mensagens e do comentário é escrito pelo Editor a partir da fala. Comentário real só entra com o nome trocado por um apelido (\"Aluna de SP\"). Em cima deles não entra tremor de câmera, porque é texto para ler.",
+  "como_testar": [
+   "Dar play no vídeo: 12 s do óbvio 02 (a parte da live só para quem tem o link)",
+   "No \"vergonha\" o celular sobe em tela cheia e a conversa vai aparecendo: mensagem do aluno, resposta laranja, \"digitando\" antes da pergunta seguinte",
+   "No \"treinar\" entra o cartão do comentário com 5 estrelas acendendo",
+   "Conferir se dá tempo de ler cada mensagem e se o celular não lembra nenhum app de verdade",
+   "Num pedido real, pedir por exemplo: \"mostra a conversa com o cliente num celular\" ou \"põe esse comentário com estrelas\""
+  ],
+  "onde": "/",
+  "midia": [
+   "celular-comentario.mp4"
+  ]
+ },
+ {
+  "id": "icones-3d",
+  "data": "2026-11-16",
+  "area": "Edição",
+  "titulo": "Ícones e emoji 3D entrando na palavra-chave",
+  "o_que_e": "Resto do item 1 da lista \"O que o Máquina faz e nós não\". O Editor agora tem 63 emoji 3D (celular, dinheiro, câmera, microfone, foguete, check, x, coração, fogo, estrela, raio, alvo, gráfico subindo, relógio, cadeado, presente, lâmpada, megafone, olhos, joinha, palmas, 100, alerta, troféu e outros) que entram com um pop elástico quando a palavra é dita e ficam flutuando de leve, com uma etiqueta opcional embaixo. O ícone pode ser escolhido pelo nome ou sair da própria fala (\"grana\" vira o saco de dinheiro, \"viralizou\" vira fogo). Os desenhos são do Fluent Emoji da Microsoft, de licença livre (MIT), e vão junto com o Editor, com os créditos.",
+  "como_testar": [
+   "Dar play no vídeo: 12 s do óbvio 02",
+   "No \"não precisa\" entra um X vermelho com \"Estúdio\"; no \"celular\" entra o celular e, logo depois, a estrela com \"Profissional\"; no \"gratuito\" entra o presente com \"Grátis\"",
+   "Conferir se o ícone entra junto da palavra e se a flutuação fica leve, sem atrapalhar o rosto",
+   "Num pedido real, pedir por exemplo: \"põe emoji 3D nas palavras-chave, estilo anúncio\""
+  ],
+  "onde": "/",
+  "midia": [
+   "icones-3d.mp4"
+  ]
+ },
+ {
+  "id": "etiqueta-mouse",
+  "data": "2026-11-16",
+  "area": "Edição",
+  "titulo": "Etiqueta do passo junto do mouse (tutorial e aula)",
+  "o_que_e": "Na gravação de tela, quando você diz uma instrução (\"você vai clicar nesse maisinho\"), aparece ao lado da ponta do mouse um balão laranja curto com o passo (\"Clique no Maisinho\", até 4 palavras). Ele nasce com pop na hora em que você fala, acompanha o mouse enquanto ele anda e some suave em ~2,4 s. Fica sempre ao lado da ponta (perto da borda ele vira de lado), nunca em cima do que é clicado. O sistema acha o mouse na própria gravação; se não achar, usa o lugar onde a tela mudou. No máximo 1 a cada 3 s e só quando a fala pede uma ação. Lacuna 8 dos Criativos do Máquina.",
+  "como_testar": [
+   "Dar play no vídeo: 14 s da aula do OBS (Ferramentas → Scripts → maisinho) no layout de tela",
+   "Devem aparecer 3 balões: \"Vá em Ferramentas\", \"Vá em Script\" e \"Clique no Maisinho\", cada um junto da ponta do mouse (o \"Vá em Script\" cai longe do mouse porque a própria gravação dá zoom ali: limitação conhecida)",
+   "Conferir se o balão não cobre o botão clicado e se acompanha o mouse quando ele anda",
+   "Se o balão aparecer longe do mouse ou com texto estranho, anotar o segundo em Deu problema"
+  ],
+  "onde": "/",
+  "midia": [
+   "etiqueta-mouse.mp4"
+  ]
+ },
+ {
+  "id": "biblioteca-edicao",
+  "data": "2026-11-16",
+  "area": "Edição",
+  "titulo": "Receitas de edição: biblioteca de estilos profissionais que vai junto com o Editor",
+  "o_que_e": "18 receitas prontas (fala + tela, tutorial calmo, dica de 30 s, lista com capítulos, opinião, bastidor, anúncio com demonstração, depoimento, antes e depois, aula longa, corte de live e outras). Cada uma diz ao Editor o estilo base, a energia, os gráficos permitidos com teto, as transições, a estrutura com tempos e o que evitar, com um prompt pronto. Fica na pasta biblioteca-edicao/ do projeto: vai para o GitHub e chega a todo mundo que instala o plugin, junto com os padrões medidos nas 23 referências estudadas (sem nome, link nem imagem de quem fez). Referência nova vira proposta de receita pelo Editor e só entra na biblioteca quando você aprova.",
+  "como_testar": [
+   "Menu › Receitas de edição: abrir uma receita, ver estrutura, transições e prompt",
+   "Clicar Usar no pedido: o Novo pedido abre com o chip 📖 da receita",
+   "No Novo pedido, a faixa Comece por uma receita escolhe com um clique",
+   "Pedir propostas ao Editor (no topo da página) para ele transformar as 22 referências em receitas novas; aprovar ou recusar em Propostas"
+  ],
+  "onde": "/estilos?aba=receitas",
+  "midia": [
+   "receitas.png",
+   "novo-pedido.png"
+  ]
+ },
+ {
+  "id": "app-visual-paleta",
+  "data": "2026-11-16",
+  "area": "App",
+  "titulo": "Menu mais limpo e Ctrl+K para ir a qualquer lugar",
+  "o_que_e": "O menu lateral trocou a mistura de emojis por ícones de traço iguais, com uma marca laranja na página aberta. Ctrl+K (ou o botão Ir para… no menu) abre uma busca rápida: digite e vá para uma página, uma conversa ou abra um pedido já com uma receita. No celular, a barra de baixo ganhou Receitas.",
+  "como_testar": [
+   "Apertar Ctrl+K em qualquer página, digitar depo e escolher com as setas e Enter",
+   "Conferir o menu lateral e a barra de baixo no celular"
+  ],
+  "onde": "/",
+  "midia": [
+   "receitas.png"
+  ]
+ },
+ {
+  "id": "produto-recortado",
+  "data": "2026-11-15",
+  "area": "Edição",
+  "titulo": "Produto recortado sem fundo, com borda branca, entrando com pop",
+  "o_que_e": "Item 2 da lista \"O que o Máquina faz e nós não\" (4 peças dos Criativos: webcam, celular, mochila, bastão de LED). O Editor tira o fundo da foto do produto no próprio PC e o produto entra quando é citado na fala: borda branca, pop e flutuação leve, com etiqueta opcional embaixo. Usa um modelo de recorte local, baixado uma vez (178 MB), sem custo e sem mandar nada para fora. No teste com as fotos de Equipamentos do Drive, a webcam e o microfone saíram limpos; objeto branco em fundo branco (o painel de luz) sai incompleto e o Editor avisa.",
+  "como_testar": [
+   "Dar play no vídeo: a webcam entra quando o Thiago diz \"webcam\"; depois a C922 e o microfone entram juntos, cada um com sua etiqueta",
+   "Num pedido real que cite um equipamento, pedir por exemplo: \"mostra a webcam recortada quando eu falar dela\"; se tiver foto no Drive, dizer qual"
+  ],
+  "onde": "/",
+  "midia": [
+   "produto-recortado.mp4"
+  ]
+ },
+ {
+  "id": "legenda-pilula",
+  "data": "2026-11-15",
+  "area": "Edição",
+  "titulo": "Legenda em pílula por bloco",
+  "o_que_e": "Item 9 da lista \"O que o Máquina faz e nós não\" (visto nos depoimentos editados). Cada bloco de 2 a 4 palavras entra numa pílula laranja arredondada com um pop; as palavras acendem quando são faladas e a de ênfase dá um pulo curto. Aparece em Estilos › Legendas como \"Pílula por bloco\". A legenda serifada para história já existia (\"Serifada para história\").",
+  "como_testar": [
+   "Dar play no vídeo: a pílula entra a cada bloco e a palavra acende quando o Thiago fala",
+   "Em Estilos › Legendas, procurar \"Pílula por bloco\" e gerar a prévia",
+   "Num pedido real (depoimento ou dica), pedir: \"legenda em pílula\""
+  ],
+  "onde": "/estilos",
+  "midia": [
+   "legenda-pilula.mp4"
+  ]
+ },
+ {
+  "id": "cena-ruim",
+  "data": "2026-11-15",
+  "area": "Edição",
+  "titulo": "Cena ruim de propósito: mostrar o problema antes da solução",
+  "o_que_e": "Item 6 da lista \"O que o Máquina faz e nós não\" (como no Reel do Meet e Zoom). Um trecho do vídeo fica feio de propósito e o resto passa igual. Efeitos: som de rádio, microfone de notebook, imagem pixelada, webcam barata (borrada, pixelada, apagada e com som de notebook) e preto e branco com vinheta, para dúvida ou citação. O agente só usa quando a fala pede (\"olha como fica com o microfone do notebook\"), no máximo 8 s por trecho. Só ffmpeg, sem gastar modelo.",
+  "como_testar": [
+   "Dar play no primeiro vídeo: até 2,5 s é a webcam ruim (com som de notebook) e depois volta ao normal",
+   "Dar play no segundo: preto e branco com vinheta, depois o som de rádio (só no áudio, de 2,6 a 4,6 s) e no fim a imagem pixelada",
+   "Num pedido real de antes/depois, pedir por exemplo: \"mostra o antes com cara de webcam ruim\""
+  ],
+  "onde": "/",
+  "midia": [
+   "webcam-ruim-depois-normal.mp4",
+   "drama-e-radio.mp4"
+  ]
+ },
+ {
+  "id": "grafismos-acabamento",
+  "data": "2026-11-15",
+  "area": "Edição",
+  "titulo": "Acabamentos do Máquina nos grafismos: neon, 3D, tarjas, card com etiqueta e banner",
+  "o_que_e": "Primeiras lacunas da lista \"O que o Máquina faz e nós não\" (itens 4 e 5 e parte do 1). Os grafismos que já existiam ganharam um acabamento opcional: número ou pílula em neon (brilho laranja com uma piscada de lâmpada na entrada), número e título em 3D (letra com volume e leve perspectiva), título em duas tarjas de cor que entram de lados opostos, título num card com etiqueta inclinada (\"OLHA SÓ\") e faixa de banner de ponta a ponta no topo. Tudo nas cores da marca. O agente só usa com motivo (preço que precisa saltar, abertura, número de peso), no máximo um ou dois por vídeo; sem pedido, o desenho continua o de antes.",
+  "como_testar": [
+   "Dar play no primeiro vídeo: tarjas \"DEPENDE DA / SUA WEBCAM\", C922 em 3D na tela cheia e pílula neon \"APP DA LOGITECH\"",
+   "Dar play no segundo: banner laranja no topo, card com etiqueta \"OLHA SÓ\", C922 em neon e título 3D no fim",
+   "Num pedido real, pedir por exemplo: \"preço em neon\" ou \"título de abertura em tarjas\" e ver se aparece só onde faz sentido"
+  ],
+  "onde": "/",
+  "midia": [
+   "demo-tarjas-3d-neon.mp4",
+   "demo-card-neon-banner.mp4"
+  ]
+ },
+ {
+  "id": "maquina-efeitos",
+  "data": "2026-11-15",
+  "area": "Referências",
+  "titulo": "O que o Máquina faz e nós não: escolha a ordem de construção",
+  "o_que_e": "O Gemini assistiu às 23 peças editadas da pasta Criativos do Drive e listou 195 efeitos, cada um marcado como igual ao nosso, parecido ou inexistente. O que o Máquina mais usa nós já temos igual: legenda animada, whoosh, zoom no corte, pop de palavra, b-roll, trilha com ducking e CTA. A diferença está no acabamento dos grafismos. As 9 faixas abaixo mostram as lacunas, numeradas por quantas peças usam cada uma. Ficaram fora as escolhas de gravação (câmera na mão, timelapse, troca de ângulo, som ambiente), que não são edição.",
+  "como_testar": [
+   "1. Objetos e texto 3D (emoji 3D, ícone de app 3D, pasta do OBS, número em bloco, letras com volume): 6 peças. Biblioteca de ícones 3D com licença livre + texto com volume no Remotion",
+   "2. Produto recortado sem fundo, com borda branca, entrando com pop e flutuando (webcam, celular, mochila, bastão de LED): 4 peças. Tira o fundo da foto no próprio PC",
+   "3. Celular na tela com conversa digitando e cartão de comentário do Instagram (balão + avatar): 4 peças",
+   "4. Títulos em tarja de cor dividida, card com etiqueta (\"OLHA SÓ\"), pílula fixa no topo, faixa de banner: 4 peças. Variações da nossa manchete",
+   "5. Número ou preço em neon com brilho: 2 peças. O mais rápido de fazer",
+   "6. Cena ruim de propósito para mostrar o problema (som de rádio abafado, imagem pixelada, preto e branco com vinheta): 1 peça (Meet e Zoom), barato e forte em antes/depois",
+   "7. Cartão de história em tela cheia (\"era uma vez...\"), janela de slide e grade de botões entrando em cascata: 1 peça (matei um professor)",
+   "8. Etiqueta do passo junto do mouse na tela do OBS (\"Botão direito › Propriedades\", \"ANTES\"): 2 peças da série O óbvio",
+   "9. Legenda em pílula colorida por bloco e legenda serifada para história: 2 peças",
+   "Responda no chat com os números na ordem que você quer (ex.: 2, 5, 1). Não precisa marcar Funcionou aqui"
+  ],
+  "onde": "/laboratorio",
+  "midia": [
+   "1-objetos-e-texto-3d.jpg",
+   "2-produto-recortado-sem-fundo.jpg",
+   "3-celular-chat-e-comentario.jpg",
+   "4-titulos-tarja-etiqueta-banner.jpg",
+   "5-numero-neon.jpg",
+   "6-cena-ruim-de-proposito.jpg",
+   "7-cartao-de-historia-e-grade.jpg",
+   "8-etiqueta-do-passo-junto-do-mouse.jpg",
+   "9-legenda-em-pilula-por-bloco.jpg"
+  ]
+ },
+ {
+  "id": "fim-quadro-calmo",
+  "data": "2026-11-15",
+  "area": "Edição",
+  "titulo": "Fim do vídeo no quadro calmo, antes da mão ir à câmera",
+  "o_que_e": "A diferença é de só 0,3 s no final, por isso o vídeo é uma comparação em câmera lenta (4x). Antes, o vídeo do anúncio multistream terminava em 367,43 s do bruto, com a boca ainda mexendo; agora termina em 367,72 s, com o rosto parado. Mais adiante no bruto (a partir de 368,4 s) o braço sobe até a câmera: isso fica de fora nos dois casos, mas o ponto de parada novo é mais calmo. No obvio02 a mudança é a mesma ideia (78,85 → 79,20 s).",
+  "como_testar": [
+   "Dar play no vídeo (27 s). Ele tem 3 partes, cada uma termina com o último quadro congelado por 2 s, com o tempo do bruto na tela",
+   "Parte 1 (ANTES) e parte 2 (DEPOIS): comparar os dois quadros congelados. No ANTES a boca ainda está mexendo; no DEPOIS o rosto está parado",
+   "Parte 3 mostra o que vem depois do fim: a mão sobe. Ela fica fora do vídeo final; marcar Funcionou se o fim novo parece mais limpo, ou Deu problema dizendo o que viu"
+  ],
+  "onde": "/",
+  "midia": [
+   "fim-comparacao.mp4"
+  ]
+ },
+ {
+  "id": "cortes-longos-em-frase",
+  "data": "2026-11-15",
+  "area": "Clipador",
+  "titulo": "Cortes de vídeo longo começando e terminando na frase (com nota do corte)",
+  "o_que_e": "No Clipador e no Kit, cada corte proposto agora passa por uma conferência: o começo vai para o início da frase e não abre em \"E aí…\", \"Mas…\", \"Então, …\" ou muleta solta; o fim fecha a frase em que parou e não termina em \"…de\", \"…que\"; o ar depois da última palavra não entra na frase seguinte. Cada corte ganha uma nota de 0 a 100, medida sem IA, com o motivo de cada desconto (começa no meio, termina no meio, abertura fraca, duração, número no gancho que ninguém disse). Corte que sobrepõe um melhor fica marcado para sair. No Clipador de 29/10 (obvio03): a média dos 6 cortes foi de 80 para 95; o c03 abria em \"E aqui eu tenho…\" e agora abre em \"O que são essas duas opções aqui?\"; o c06 começava no meio de uma frase.",
+  "como_testar": [
+   "Dar play no c03 ANTES e DEPOIS: ouvir a primeira frase de cada um",
+   "Dar play no c06 ANTES e DEPOIS: o ANTES começa com \"ISO.\" solto, o DEPOIS começa na frase",
+   "Mandar uma live ou aula no Clipador: na lista de cortes, cada um mostra \"Corte N/100\" e os problemas (verde 85+, laranja 70+, vermelho abaixo)",
+   "Se um corte começar ou terminar estranho mesmo com nota alta, anotar o código do corte e o segundo em Deu problema"
+  ],
+  "onde": "/clipador",
+  "midia": [
+   "c03-antes.mp4",
+   "c03-depois.mp4",
+   "c06-antes.mp4",
+   "c06-depois.mp4"
+  ]
+ },
+ {
+  "id": "zoom-area-ativa",
+  "data": "2026-11-15",
+  "area": "Edição",
+  "titulo": "Zoom na área ativa da tela (tutorial e aula)",
+  "o_que_e": "Na gravação de tela, a câmera agora fica pelo menos 3 s em cada lugar (antes andava a cada 2 s), aproxima no máximo 1,7x (antes chegava a 2,2x), mudança no mesmo lugar segura o zoom em vez de sair e voltar, e o seu rosto na prévia do OBS não puxa mais o zoom (a janela que abre por cima dele, sim). A barra de tarefas do Windows (relógio, ícones) também não conta. Em cada corte dentro da tela, a imagem muda de 1,00 para 1,02 de uma vez, e o corte parece reenquadramento. Na aula do OBS de 4 min: de 71 zooms com menos de 3 s para 53, todos com 3 s ou mais.",
+  "como_testar": [
+   "Dar play no primeiro vídeo (focos antigos) e no segundo (novos): 45 s da aula do OBS no layout de tela",
+   "No segundo, a câmera deve parar mais tempo em cada lugar e não ir no seu rosto",
+   "Mandar uma aula ou tutorial em Novo pedido com layout tela ou tutorial e conferir na entrega",
+   "Se a câmera for para um lugar sem sentido, anotar o segundo em Deu problema"
+  ],
+  "onde": "/",
+  "midia": [
+   "tela-antes.mp4",
+   "tela-depois.mp4"
+  ]
+ },
+ {
+  "id": "efeitos-com-limite",
+  "data": "2026-11-15",
+  "area": "Edição",
+  "titulo": "Efeitos com limite (zoom de impacto, tremor e whoosh)",
+  "o_que_e": "O motor agora segura os efeitos sozinho, sem cota mínima: zoom de impacto com pelo menos 8 s entre um e outro e no máximo 6 por minuto; tremor a 3 s de outro impacto, no máximo 10% do Reels e nunca em cima de texto que a pessoa está lendo; whoosh com o pico caindo no corte (entra 0,15 a 0,3 s antes) e no máximo 1 a cada 5 s; o som e o impacto da palavra caem no ataque da voz (até 0,15 s depois do que o Whisper marcou). Quando o agente pede um efeito de propósito, ele passa. Vale também para o que vai ao CapCut. No obvio02 em Bem dinâmico: de 7 zooms de impacto (o mais perto a 1,8 s do outro) para 3; no anúncio do multistream, de 23 para 12.",
+  "como_testar": [
+   "Dar play no primeiro vídeo (SEM LIMITE, como era) e no segundo (COM LIMITE): mesmo corte do obvio02 em Bem dinâmico",
+   "No segundo, os zooms e tremores devem ficar mais espaçados e o whoosh chegar junto do corte",
+   "Mandar um Reels com Bem dinâmico em Novo pedido e ver se o ritmo ficou bom ou ficou parado demais",
+   "Se achou parado demais ou ainda poluído, Deu problema dizendo qual dos dois"
+  ],
+  "onde": "/",
+  "midia": [
+   "efeitos-antes.mp4",
+   "efeitos-depois.mp4"
+  ]
+ },
+ {
+  "id": "cortes-sem-respiro",
+  "data": "2026-11-15",
+  "area": "Edição",
+  "titulo": "Cortes sem a pausa de respiração (seu retorno do 0:05)",
+  "o_que_e": "A pausa que você achou no 0:05 era uma inspiração: o ar fica um pouco acima do silêncio e o corte tratava como fala. Agora o trecho que começa numa inspiração começa 0,15 s antes da voz, e a pausa cheia de respiro no meio da fala encurta como silêncio (se tiver palavra no meio, fica). No obvio02 a pausa do 0:05 caiu de 0,73 s para 0,35 s (contando o fim da palavra e o começo da outra), a maior pausa do vídeo caiu de 0,73 para 0,47 s e o vídeo ficou 1 s mais curto, com a fala inteira e 11 de 11 emendas ouvidas. No anúncio do multistream, 1 emenda a menos para conferir de ouvido.",
+  "como_testar": [
+   "Dar play no primeiro vídeo: 9 s do ANTES e os mesmos 9 s do DEPOIS. Prestar atenção logo depois de 'live no YouTube.'",
+   "No segundo vídeo (o corte novo inteiro), procurar pausa que ainda sobra ou palavra comida, e anotar o segundo",
+   "Se ficou bom, marcar Funcionou; se ainda sobra pausa, Deu problema com os segundos"
+  ],
+  "onde": "/",
+  "midia": [
+   "respiro-antes-depois.mp4",
+   "obvio02-sem-respiro.mp4"
+  ]
+ },
+ {
+  "id": "revisor-medido",
+  "data": "2026-11-14",
+  "area": "Edição",
+  "titulo": "Revisor com ouvidos: o que se mede antes do Gemini",
+  "o_que_e": "Antes do Gemini assistir, o Revisor agora mede o vídeo final de graça (uns 10 s por minuto): tela preta solta, imagem parada, quadro piscando, silêncio que sobrou, volume e pico fora do padrão, áudio e vídeo de tamanhos diferentes, estalo ou pedaço de som na emenda, volume que pula entre dois takes e palavra dita duas vezes ('o o', 'o seu o seu'; 'o que que é' não conta). O que ele mede vai para o Gemini conferir e aparece na revisão junto. Se o Gemini estiver sem chave ou sem cota, a parte medida vale sozinha. Testado em 5 entregas reais de 11/11: 3 saíram limpas e 2 tiveram um estalo na emenda, que são os dois vídeos abaixo.",
+  "como_testar": [
+   "Dar play no primeiro vídeo e prestar atenção aos 2 s: o Revisor ouviu um estalo ou pedaço de sílaba na emenda (depois de 'passado.')",
+   "Dar play no segundo, também aos 2 s (entre 'aqui' e 'pronto.')",
+   "Se você ouviu os dois, marcar Funcionou. Se não ouviu nada, Deu problema, dizendo qual",
+   "Opcional: mandar um Reels de fala em Novo pedido e ver no Resumo/Pendências os itens medidos"
+  ],
+  "onde": "/",
+  "midia": [
+   "estalo-c28-em-2s.mp4",
+   "estalo-c26-em-2s.mp4"
+  ]
+ },
+ {
+  "id": "cortes-que-nao-se-notam",
+  "data": "2026-11-14",
+  "area": "Edição",
+  "titulo": "Cortes que não se notam",
+  "o_que_e": "O corte agora acha a borda pela voz (o fim inclui o 's' final, o começo tem 70 ms de ar), encurta a pausa conforme a energia pedida e ouve cada emenda antes de cortar: se uma palavra sumiu, testa a borda vizinha. Também corrigidos três defeitos achados no teste: vídeo com áudio começando depois da imagem (todo corte caía 1,9 s fora), retranscrição que trocava fala certa por outra frase e frases inteiras tratadas como recomeço ('não é falta de equipamento. É falta de…'). No bruto do Óbvio parte 2: antes 26 s com frases mutiladas ('Você live no YouTube'), depois 37 s com a fala inteira, 11 de 11 emendas conferidas e nenhuma pausa acima de 0,4 s.",
+  "como_testar": [
+   "Dar play no primeiro vídeo aqui embaixo: passa o antes (corte velho) e depois o novo",
+   "No segundo vídeo (só o novo), procurar palavra comida, frase pela metade ou palavra repetida na emenda",
+   "Mandar um Reels de fala com refação em Novo pedido e conferir o mesmo na entrega",
+   "Se notar um corte, anotar o segundo em Deu problema"
+  ],
+  "onde": "/",
+  "midia": [
+   "obvio02-antes-depois.mp4",
+   "obvio02-depois.mp4"
+  ]
+ },
+ {
+  "id": "skills-pacote",
+  "data": "2026-11-13",
+  "area": "Banco de skills",
+  "titulo": "Instalar skill de repositório com várias skills",
+  "o_que_e": "O instalador recusava repositório com mais de uma skill (todas as aprovadas eram assim) e o download estourava caminho longo no Windows. Agora cada skill do repositório vira uma pasta do pacote; arquivo acima de 25 MB e skill com programa (.exe/.dll) ficam de fora com aviso. A análise das 8 aprovadas recomenda não instalar nenhuma (ver o item Análise das skills); o teste é instalar e desinstalar uma.",
+  "como_testar": [
+   "Abrir Banco de skills",
+   "Num item aprovado (ex.: shorts), clicar em ⬇ Instalar skill e ver a mensagem",
+   "Abrir a ficha (clicar no nome) e ver Instalada",
+   "Clicar em desinstalar para não deixar a skill carregada no agente"
+  ],
+  "onde": "/skills"
+ },
+ {
+  "id": "skills-analise",
+  "data": "2026-11-13",
+  "area": "Banco de skills",
+  "titulo": "Análise das 8 skills aprovadas",
+  "o_que_e": "Cada skill aprovada ganhou uma nota com o veredito (instalar, só reproduzir ou descartar) e o campo Como reproduzir preenchido. Resumo: nenhuma vale instalar no agente; shorts, 2BFT e ShortsFlow têm as melhores técnicas para levar ao motor.",
+  "como_testar": [
+   "Abrir Banco de skills",
+   "Clicar no nome de cada item aprovado e ler a nota de Claude (análise 13/11)",
+   "Dizer quais técnicas entram primeiro no motor (a sugestão está no chat)"
+  ],
+  "onde": "/skills"
+ },
+ {
+  "id": "laboratorio",
+  "data": "2026-11-13",
+  "area": "App",
+  "titulo": "Laboratório (esta página)",
+  "o_que_e": "Lista do que ficou pronto para você testar, com o passo a passo. Funcionou ou Deu problema fica gravado, e o problema vira anotação para a próxima rodada de construção.",
+  "como_testar": [
+   "Marcar um item como ✅ Funcionou",
+   "Marcar outro como ⚠ Deu problema, escrevendo o que aconteceu",
+   "Conferir que o número ao lado de Laboratório no menu diminuiu",
+   "Ver o problema em Ideias › Anotações do celular"
+  ],
+  "onde": "/laboratorio"
+ },
+ {
+  "id": "editor-manual-trechos",
+  "data": "2026-11-12",
+  "area": "Editor manual",
+  "titulo": "Aparar, mover e apagar trechos",
+  "o_que_e": "Faixa Trechos no editor à mão: aparar o começo e o fim de cada corte, mudar a ordem e apagar. Legenda, grafismos, efeitos sonoros e zoom acompanham. A prévia lê direto do bruto e o render recorta de novo.",
+  "como_testar": [
+   "Abrir uma entrega feita a partir de 12/11 e clicar em ✂ Editar à mão",
+   "Na faixa Trechos, aparar o fim de um corte",
+   "Arrastar um trecho para outra posição e apagar outro",
+   "Dar play: a legenda tem que acompanhar a fala",
+   "Renderizar e conferir o arquivo _editado_vN"
+  ],
+  "onde": "/biblioteca"
+ },
+ {
+  "id": "editor-manual-legenda",
+  "data": "2026-11-12",
+  "area": "Editor manual",
+  "titulo": "Trocar o estilo inteiro da legenda",
+  "o_que_e": "Seletor com os 16 estilos de legenda dentro do editor à mão; a troca vale para o vídeo todo e aparece na prévia.",
+  "como_testar": [
+   "No editor à mão, abrir a parte de legenda",
+   "Escolher outro estilo no seletor",
+   "Conferir na prévia",
+   "Renderizar e ver se saiu igual à prévia"
+  ],
+  "onde": "/biblioteca"
+ },
+ {
+  "id": "capcut-v3",
+  "data": "2026-11-12",
+  "area": "CapCut",
+  "titulo": "Mandar ao CapCut v3 (legenda editável no estilo da entrega)",
+  "o_que_e": "Legenda nativa do CapCut como padrão, com a fonte, o contorno, a sombra e a posição da entrega. Pílula, kicker e manchete viram texto do CapCut com animação; o resto dos grafismos vem num vídeo sem fundo. Barra de progresso em clipe próprio, base no bruto com a entrada e a saída de cada corte, voz no volume de −16 LUFS.",
+  "como_testar": [
+   "Numa entrega, clicar em Mandar ao CapCut",
+   "Abrir o CapCut e o rascunho Editor GS - …",
+   "Conferir: legenda editável e parecida com a entrega",
+   "Conferir: grafismos sem fundo preto, barra de progresso, zoom nos cortes",
+   "Comparar o volume da voz com a entrega"
+  ],
+  "onde": "/biblioteca"
+ },
+ {
+  "id": "capcut-destaque",
+  "data": "2026-11-12",
+  "area": "CapCut",
+  "titulo": "Legenda com palavra falada em laranja no CapCut",
+  "o_que_e": "Modo nativa_destaque: uma caixa de texto por palavra, a palavra falada em laranja. Mais pesado de editar, mais fiel ao estilo karaokê.",
+  "como_testar": [
+   "No editor à mão, Mandar ao CapCut e escolher a legenda com destaque",
+   "Abrir no CapCut e dar play",
+   "Dizer se prefere este modo ou a legenda por frase"
+  ],
+  "onde": "/biblioteca"
+ },
+ {
+  "id": "demos-skills",
+  "data": "2026-11-12",
+  "area": "Repertório",
+  "titulo": "Demos de skills",
+  "o_que_e": "Três edições por skill instalada com os mesmos brutos (Reels, ADS e aula), para comparar lado a lado o que cada skill entrega.",
+  "como_testar": [
+   "Abrir Demos de skills",
+   "Assistir as três edições de cada skill",
+   "Dizer qual skill vale levar para o motor"
+  ],
+  "onde": "/demos"
+ },
+ {
+  "id": "inicio-novo",
+  "data": "2026-11-12",
+  "area": "App",
+  "titulo": "Início com a caixa do pedido no topo",
+  "o_que_e": "Caixa do pedido em cima, tipos de pedido como atalhos, fluxo, estilo, pasta e modelo em ⚙ mais opções. Pastas de teste escondidas (aparecem com mostrar testes).",
+  "como_testar": [
+   "Abrir Novo pedido",
+   "Usar um atalho de tipo e mandar um pedido",
+   "Abrir ⚙ mais opções e conferir que nada sumiu"
+  ],
+  "onde": "/"
+ },
+ {
+  "id": "skills-quarentena-dissecar",
+  "data": "2026-11-13",
+  "area": "Banco de skills",
+  "titulo": "Skills em quarentena, raio-x e Dissecar",
+  "o_que_e": "Skills instaladas não entram mais no agente: ficam em quarentena e ganham raio-x automático (custo, telemetria, licença, peso). Dissecar separa cada skill em peças (regras, ativos, código, descartar) e você marca o que o Editor aproveita; o aproveitado vai para a Fila de absorção. As 7 instaladas já vieram dissecadas.",
+  "como_testar": [
+   "Abrir Banco de skills e descer até Skills instaladas: conferir 0 ativas no agente",
+   "Abrir um item instalado (ex.: Shorts) e clicar em 🧩 Peças",
+   "Marcar ✓ aproveitar numa peça e ver ela na Fila de absorção",
+   "Numa peça de regra, clicar em 🎓 ensinar ao Editor",
+   "Clicar em liberar MB numa skill pesada (AskEditor ou video-use)"
+  ],
+  "onde": "/skills"
+ },
+ {
+  "id": "edicao-com-motivo",
+  "data": "2026-11-13",
+  "area": "Edição",
+  "titulo": "Cortes que não comem sílaba e efeito só com motivo",
+  "o_que_e": "O agente agora lê a fala inteira e decide a história antes de cortar, confere cada emenda (conferir_emendas) antes de renderizar, não apaga mais \"e\", \"então\" e \"aí\" que ligam ideias, deixa mais folga no fim das palavras e só põe transição forte em troca de assunto e gráfico quando a frase tem motivo (no máximo 1 a cada 4 s). O estilo padrao sai limpo de verdade (sem zoom, clarão e tela final), e o Revisor passou a procurar fala desconexa, take repetido e efeito sem motivo.",
+  "como_testar": [
+   "Mandar um Reels bruto com refações e o estilo padrao: conferir que sai sem zoom, clarão e tela final",
+   "Mandar o mesmo com estilo profissional: conferir que as transições fortes caem nas trocas de assunto",
+   "Ler o Resumo: Na tela deve dizer o motivo de cada efeito",
+   "Procurar sílaba comida no fim das frases e frase que começa e não termina"
+  ],
+  "onde": "/"
+ },
+ {
+  "id": "atualizacao-automatica",
+  "data": "2026-11-13",
+  "area": "App",
+  "titulo": "Editor se atualiza sozinho",
+  "o_que_e": "Na instalação pelo plugin (Thiago e testers), o app confere o GitHub a cada 30 minutos e, quando há versão nova e nenhum pedido rodando, atualiza e reinicia sozinho. A página Operação mostra a versão, a última olhada e o botão Procurar atualização.",
+  "como_testar": [
+   "Abrir Operação e ver o cartão Versão do Editor",
+   "No PC do Thiago, depois de publicada uma versão nova, esperar até 30 min ou clicar em Procurar atualização"
+  ],
+  "onde": "/operacao"
+ }
+]

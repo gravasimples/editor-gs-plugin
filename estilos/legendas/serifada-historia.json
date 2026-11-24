@@ -1,0 +1,29 @@
+{
+ "id": "serifada-historia",
+ "nome": "Serifada (história)",
+ "descricao": "Crimson, minúsculas, sem karaokê, sobre caixa marinho. O tipo do manual para história com foto.",
+ "temas": [
+  "historia",
+  "bastidor",
+  "depoimento"
+ ],
+ "fora_da_marca": false,
+ "ordem": 7,
+ "legenda": {
+  "modo": "linha",
+  "fonte": "Crimson GS",
+  "peso": "Regular",
+  "tamanho_9x16": 74,
+  "tamanho_16x9": 56,
+  "cor_texto": "#FFFFFF",
+  "cor_destaque": "#F79615",
+  "contorno": "#000921",
+  "posicao": "baixa",
+  "palavras_por_linha_max": 5,
+  "maiusculas": false,
+  "animacao": "subir",
+  "caixa": true,
+  "cor_caixa": "#000921",
+  "caixa_alpha": "40"
+ }
+}

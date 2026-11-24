@@ -1,0 +1,48 @@
+{
+ "id": "historia-bastidor",
+ "ordem": 6,
+ "nome": "História de bastidor",
+ "energia": "calmo",
+ "base_estilo": "bastidor",
+ "legenda": "serifada-historia",
+ "resumo": "Conversa de bastidor que respira: legenda serifada, terço inferior, cortes secos e nada piscando.",
+ "formatos": [
+  "fala"
+ ],
+ "temas": [
+  "historia",
+  "bastidor",
+  "depoimento"
+ ],
+ "grafismos": {
+  "tipos": [
+   "kicker"
+  ],
+  "a_cada_s": 30
+ },
+ "transicoes": {
+  "seco": 1.0
+ },
+ "estrutura": [
+  "abertura: o momento da história, sem contexto longo",
+  "meio: a virada, com plano mais fechado",
+  "fim: o que mudou, sem CTA de venda"
+ ],
+ "regras": [
+  "Pausas até 0,5 s ficam: é conversa",
+  "Plano mais fechado na virada",
+  "Terço inferior com o nome só na abertura"
+ ],
+ "evitar": [
+  "efeito sonoro",
+  "zoom por frase",
+  "tela final de CTA"
+ ],
+ "prompt": "História de bastidor com calma: legenda serifada, terço inferior com o nome na abertura, cortes secos e pausas curtas mantidas. Plano mais fechado na virada da história e nenhum efeito piscando.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}

@@ -1,0 +1,657 @@
+{
+ "fonte": "Fluent Emoji 3D (c) Microsoft Corporation, MIT",
+ "icones": {
+  "celular": {
+   "arquivo": "celular.png",
+   "fluent": "Mobile phone",
+   "palavras": [
+    "celular",
+    "celulares",
+    "telefone",
+    "smartphone",
+    "iphone",
+    "android"
+   ]
+  },
+  "dinheiro": {
+   "arquivo": "dinheiro.png",
+   "fluent": "Money bag",
+   "palavras": [
+    "dinheiro",
+    "grana",
+    "lucro",
+    "faturamento",
+    "faturar",
+    "faturei",
+    "ganhar",
+    "ganhei",
+    "ganho",
+    "renda"
+   ]
+  },
+  "dinheiro_voando": {
+   "arquivo": "dinheiro_voando.png",
+   "fluent": "Money with wings",
+   "palavras": [
+    "gastar",
+    "gastei",
+    "gasto",
+    "gastos",
+    "prejuizo",
+    "caro",
+    "desperdicio"
+   ]
+  },
+  "nota": {
+   "arquivo": "nota.png",
+   "fluent": "Dollar banknote",
+   "palavras": [
+    "nota",
+    "notas",
+    "reais",
+    "pagamento",
+    "pagar",
+    "pago"
+   ]
+  },
+  "cartao": {
+   "arquivo": "cartao.png",
+   "fluent": "Credit card",
+   "palavras": [
+    "cartao",
+    "credito",
+    "parcela",
+    "parcelado",
+    "parcelar"
+   ]
+  },
+  "carrinho": {
+   "arquivo": "carrinho.png",
+   "fluent": "Shopping cart",
+   "palavras": [
+    "comprar",
+    "compra",
+    "compras",
+    "carrinho",
+    "loja"
+   ]
+  },
+  "presente": {
+   "arquivo": "presente.png",
+   "fluent": "Wrapped gift",
+   "palavras": [
+    "presente",
+    "bonus",
+    "brinde",
+    "gratis",
+    "gratuito"
+   ]
+  },
+  "camera": {
+   "arquivo": "camera.png",
+   "fluent": "Camera",
+   "palavras": [
+    "camera",
+    "cameras",
+    "fotos",
+    "fotografia"
+   ]
+  },
+  "camera_video": {
+   "arquivo": "camera_video.png",
+   "fluent": "Video camera",
+   "palavras": [
+    "filmadora",
+    "filmar",
+    "filmando",
+    "gravar",
+    "gravando",
+    "gravacao",
+    "webcam"
+   ]
+  },
+  "claquete": {
+   "arquivo": "claquete.png",
+   "fluent": "Clapper board",
+   "palavras": [
+    "filme",
+    "take",
+    "takes"
+   ]
+  },
+  "microfone": {
+   "arquivo": "microfone.png",
+   "fluent": "Studio microphone",
+   "palavras": [
+    "microfone",
+    "microfones",
+    "mic",
+    "audio",
+    "podcast"
+   ]
+  },
+  "microfone_mao": {
+   "arquivo": "microfone_mao.png",
+   "fluent": "Microphone",
+   "palavras": [
+    "cantar",
+    "karaoke",
+    "palco"
+   ]
+  },
+  "fone": {
+   "arquivo": "fone.png",
+   "fluent": "Headphone",
+   "palavras": [
+    "fone",
+    "fones",
+    "headset",
+    "ouvir",
+    "musica"
+   ]
+  },
+  "notebook": {
+   "arquivo": "notebook.png",
+   "fluent": "Laptop",
+   "palavras": [
+    "notebook",
+    "laptop",
+    "computador"
+   ]
+  },
+  "computador": {
+   "arquivo": "computador.png",
+   "fluent": "Desktop computer",
+   "palavras": [
+    "desktop"
+   ]
+  },
+  "tv": {
+   "arquivo": "tv.png",
+   "fluent": "Television",
+   "palavras": [
+    "televisao",
+    "tv"
+   ]
+  },
+  "foguete": {
+   "arquivo": "foguete.png",
+   "fluent": "Rocket",
+   "palavras": [
+    "foguete",
+    "decolar",
+    "decolou",
+    "explodir",
+    "bombar",
+    "bombou",
+    "lancamento",
+    "lancar"
+   ]
+  },
+  "check": {
+   "arquivo": "check.png",
+   "fluent": "Check mark button",
+   "palavras": [
+    "correto",
+    "resolvido"
+   ]
+  },
+  "x": {
+   "arquivo": "x.png",
+   "fluent": "Cross mark",
+   "palavras": [
+    "errado",
+    "erro",
+    "erros",
+    "proibido"
+   ]
+  },
+  "coracao": {
+   "arquivo": "coracao.png",
+   "fluent": "Red heart",
+   "palavras": [
+    "coracao",
+    "amor",
+    "amo",
+    "curtir",
+    "curtida",
+    "curtidas",
+    "like",
+    "likes"
+   ]
+  },
+  "fogo": {
+   "arquivo": "fogo.png",
+   "fluent": "Fire",
+   "palavras": [
+    "fogo",
+    "quente",
+    "hot",
+    "viral",
+    "viralizar",
+    "viralizou"
+   ]
+  },
+  "estrela": {
+   "arquivo": "estrela.png",
+   "fluent": "Star",
+   "palavras": [
+    "estrela",
+    "estrelas",
+    "avaliacao",
+    "avaliacoes"
+   ]
+  },
+  "estrela_brilhando": {
+   "arquivo": "estrela_brilhando.png",
+   "fluent": "Glowing star",
+   "palavras": [
+    "destaque",
+    "incrivel",
+    "brilhar"
+   ]
+  },
+  "brilho": {
+   "arquivo": "brilho.png",
+   "fluent": "Sparkles",
+   "palavras": [
+    "magica",
+    "novidade",
+    "novidades",
+    "lindo"
+   ]
+  },
+  "raio": {
+   "arquivo": "raio.png",
+   "fluent": "High voltage",
+   "palavras": [
+    "rapido",
+    "rapida",
+    "rapidez",
+    "energia",
+    "raio",
+    "instantaneo"
+   ]
+  },
+  "alvo": {
+   "arquivo": "alvo.png",
+   "fluent": "Bullseye",
+   "palavras": [
+    "alvo",
+    "meta",
+    "metas",
+    "objetivo",
+    "foco",
+    "publico"
+   ]
+  },
+  "grafico_subindo": {
+   "arquivo": "grafico_subindo.png",
+   "fluent": "Chart increasing",
+   "palavras": [
+    "crescer",
+    "cresceu",
+    "crescimento",
+    "resultado",
+    "resultados",
+    "vendas",
+    "aumentar",
+    "aumentou",
+    "subir",
+    "subiu"
+   ]
+  },
+  "grafico_caindo": {
+   "arquivo": "grafico_caindo.png",
+   "fluent": "Chart decreasing",
+   "palavras": [
+    "cair",
+    "caiu",
+    "queda",
+    "diminuir",
+    "diminuiu"
+   ]
+  },
+  "relogio": {
+   "arquivo": "relogio.png",
+   "fluent": "Alarm clock",
+   "palavras": [
+    "relogio",
+    "acordar"
+   ]
+  },
+  "cronometro": {
+   "arquivo": "cronometro.png",
+   "fluent": "Stopwatch",
+   "palavras": [
+    "minuto",
+    "minutos",
+    "segundos",
+    "cronometro"
+   ]
+  },
+  "ampulheta": {
+   "arquivo": "ampulheta.png",
+   "fluent": "Hourglass done",
+   "palavras": [
+    "esperar",
+    "espera",
+    "prazo",
+    "demora"
+   ]
+  },
+  "cadeado": {
+   "arquivo": "cadeado.png",
+   "fluent": "Locked",
+   "palavras": [
+    "cadeado",
+    "seguro",
+    "seguranca",
+    "privado",
+    "bloqueado",
+    "senha"
+   ]
+  },
+  "chave": {
+   "arquivo": "chave.png",
+   "fluent": "Key",
+   "palavras": [
+    "chave",
+    "segredo"
+   ]
+  },
+  "lampada": {
+   "arquivo": "lampada.png",
+   "fluent": "Light bulb",
+   "palavras": [
+    "ideia",
+    "ideias",
+    "dica",
+    "dicas",
+    "lampada"
+   ]
+  },
+  "megafone": {
+   "arquivo": "megafone.png",
+   "fluent": "Megaphone",
+   "palavras": [
+    "anuncio",
+    "anuncios",
+    "divulgar",
+    "divulgacao",
+    "avisar",
+    "aviso"
+   ]
+  },
+  "sino": {
+   "arquivo": "sino.png",
+   "fluent": "Bell",
+   "palavras": [
+    "notificacao",
+    "notificacoes",
+    "sininho",
+    "sino"
+   ]
+  },
+  "olhos": {
+   "arquivo": "olhos.png",
+   "fluent": "Eyes",
+   "palavras": [
+    "olhos",
+    "repara",
+    "reparou"
+   ]
+  },
+  "joinha": {
+   "arquivo": "joinha.png",
+   "fluent": "Thumbs up",
+   "palavras": [
+    "joinha",
+    "beleza",
+    "combinado",
+    "perfeito",
+    "aprovado"
+   ]
+  },
+  "deslike": {
+   "arquivo": "deslike.png",
+   "fluent": "Thumbs down",
+   "palavras": [
+    "deslike",
+    "ruim",
+    "pessimo",
+    "reprovado"
+   ]
+  },
+  "palmas": {
+   "arquivo": "palmas.png",
+   "fluent": "Clapping hands",
+   "palavras": [
+    "palmas",
+    "parabens",
+    "aplausos"
+   ]
+  },
+  "forca": {
+   "arquivo": "forca.png",
+   "fluent": "Flexed biceps",
+   "palavras": [
+    "forca",
+    "consegue",
+    "consegui"
+   ]
+  },
+  "apontando_cima": {
+   "arquivo": "apontando_cima.png",
+   "fluent": "Index pointing up",
+   "palavras": [
+    "atencao",
+    "importante"
+   ]
+  },
+  "apontando_baixo": {
+   "arquivo": "apontando_baixo.png",
+   "fluent": "Backhand index pointing down",
+   "palavras": [
+    "link",
+    "bio",
+    "descricao",
+    "abaixo",
+    "embaixo"
+   ]
+  },
+  "cem": {
+   "arquivo": "cem.png",
+   "fluent": "Hundred points",
+   "palavras": [
+    "cem",
+    "100"
+   ]
+  },
+  "alerta": {
+   "arquivo": "alerta.png",
+   "fluent": "Warning",
+   "palavras": [
+    "alerta",
+    "cuidado",
+    "perigo",
+    "problema",
+    "problemas"
+   ]
+  },
+  "trofeu": {
+   "arquivo": "trofeu.png",
+   "fluent": "Trophy",
+   "palavras": [
+    "trofeu",
+    "campeao",
+    "vencer",
+    "venceu",
+    "ganhador",
+    "vitoria"
+   ]
+  },
+  "medalha": {
+   "arquivo": "medalha.png",
+   "fluent": "1st place medal",
+   "palavras": [
+    "medalha"
+   ]
+  },
+  "coroa": {
+   "arquivo": "coroa.png",
+   "fluent": "Crown",
+   "palavras": [
+    "rei",
+    "rainha",
+    "coroa",
+    "premium",
+    "vip"
+   ]
+  },
+  "diamante": {
+   "arquivo": "diamante.png",
+   "fluent": "Gem stone",
+   "palavras": [
+    "diamante",
+    "valioso",
+    "exclusivo"
+   ]
+  },
+  "festa": {
+   "arquivo": "festa.png",
+   "fluent": "Party popper",
+   "palavras": [
+    "festa",
+    "comemorar",
+    "comemorando",
+    "celebrar",
+    "black",
+    "aniversario"
+   ]
+  },
+  "calendario": {
+   "arquivo": "calendario.png",
+   "fluent": "Calendar",
+   "palavras": [
+    "data",
+    "agenda",
+    "calendario",
+    "semana"
+   ]
+  },
+  "link": {
+   "arquivo": "link.png",
+   "fluent": "Link",
+   "palavras": [
+    "conectar",
+    "conexao"
+   ]
+  },
+  "engrenagem": {
+   "arquivo": "engrenagem.png",
+   "fluent": "Gear",
+   "palavras": [
+    "configurar",
+    "configuracao",
+    "configuracoes",
+    "ajuste",
+    "ajustes"
+   ]
+  },
+  "lupa": {
+   "arquivo": "lupa.png",
+   "fluent": "Magnifying glass tilted left",
+   "palavras": [
+    "procurar",
+    "pesquisar",
+    "pesquisa",
+    "buscar",
+    "busca"
+   ]
+  },
+  "balao": {
+   "arquivo": "balao.png",
+   "fluent": "Speech balloon",
+   "palavras": [
+    "comentario",
+    "comentarios",
+    "comenta",
+    "comentar",
+    "mensagem",
+    "mensagens",
+    "conversa",
+    "chat"
+   ]
+  },
+  "pergunta": {
+   "arquivo": "pergunta.png",
+   "fluent": "Red question mark",
+   "palavras": [
+    "pergunta",
+    "perguntas",
+    "duvida",
+    "duvidas"
+   ]
+  },
+  "exclamacao": {
+   "arquivo": "exclamacao.png",
+   "fluent": "Red exclamation mark",
+   "palavras": [
+    "urgente"
+   ]
+  },
+  "cabeca_explodindo": {
+   "arquivo": "cabeca_explodindo.png",
+   "fluent": "Exploding head",
+   "palavras": [
+    "chocante",
+    "surreal",
+    "inacreditavel"
+   ]
+  },
+  "choque": {
+   "arquivo": "choque.png",
+   "fluent": "Face screaming in fear",
+   "palavras": [
+    "medo",
+    "susto",
+    "socorro"
+   ]
+  },
+  "apaixonado": {
+   "arquivo": "apaixonado.png",
+   "fluent": "Smiling face with heart-eyes",
+   "palavras": [
+    "apaixonado",
+    "apaixonei"
+   ]
+  },
+  "pensando": {
+   "arquivo": "pensando.png",
+   "fluent": "Thinking face",
+   "palavras": [
+    "pensar",
+    "pensando"
+   ]
+  },
+  "cerebro": {
+   "arquivo": "cerebro.png",
+   "fluent": "Brain",
+   "palavras": [
+    "cerebro",
+    "inteligencia",
+    "inteligente",
+    "aprender"
+   ]
+  },
+  "wifi": {
+   "arquivo": "wifi.png",
+   "fluent": "Wireless",
+   "palavras": [
+    "internet",
+    "wifi"
+   ]
+  }
+ }
+}

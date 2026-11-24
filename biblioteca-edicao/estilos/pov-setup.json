@@ -1,0 +1,44 @@
+{
+ "id": "pov-setup",
+ "ordem": 7,
+ "nome": "POV do setup",
+ "energia": "calmo",
+ "base_estilo": "pov",
+ "legenda": "minuscula-discreta",
+ "resumo": "Ponto de vista de quem está montando: legenda minúscula, ritmo natural, som do ambiente presente.",
+ "formatos": [
+  "fala"
+ ],
+ "temas": [
+  "bastidor",
+  "historia"
+ ],
+ "grafismos": {
+  "tipos": []
+ },
+ "transicoes": {
+  "seco": 1.0
+ },
+ "estrutura": [
+  "começa já no meio da ação",
+  "mostra o resultado montado",
+  "fim aberto, sem tela final"
+ ],
+ "regras": [
+  "Sem zoom digital: o movimento é o da câmera",
+  "Legenda pequena e baixa",
+  "Corte seco no ritmo da ação"
+ ],
+ "evitar": [
+  "grafismos",
+  "trilha alta",
+  "tela final"
+ ],
+ "prompt": "POV do setup: comece no meio da ação, legenda minúscula e discreta, cortes secos no ritmo do que acontece e nenhum grafismo. Sem zoom digital nem tela final.",
+ "fonte": {
+  "tipo": "curado",
+  "atualizado": "2026-11-16",
+  "referencias": 0
+ },
+ "versao": 1
+}
